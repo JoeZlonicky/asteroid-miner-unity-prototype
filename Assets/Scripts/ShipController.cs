@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,24 +6,22 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class ShipController : MonoBehaviour
 {
-    [field: SerializeField] private float ForwardAcceleration { get; set; } = 700f;
-    [field: SerializeField] private float SlowDeceleration { get; set; } = 300f;
-    [field: SerializeField] private float MaxSpeed { get; set; } = 700f;
-    [field: SerializeField] private float PassiveSpeedDeceleration { get; set; } = 10f;
+    [field: SerializeField] private float ForwardForce { get; set; } = 3f;
+    [field: SerializeField] private float MaxSpeed { get; set; } = 50f;
+    
+    [field: SerializeField] private float PassiveDrag { get; set; } = 0.1f;
+    [field: SerializeField] private float ActiveDrag { get; set; } = 2f;
+    [field: SerializeField] private float DragAcceleration { get; set; } = 50f;
 
-    [field: SerializeField] private float RotationAcceleration { get; set; } = 2f;
-    [field: SerializeField] private float MaxRotationSpeed { get; set; } = 2f;
-    [field: SerializeField] private float PassiveRotationDeceleration { get; set; } = 2f;
+    [field: SerializeField] private float TorqueForce { get; set; } = 1.5f;
     
     private Rigidbody2D _rb;
     private Vector2 _moveInput;
-    private float _currentRotationSpeed;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _moveInput = new Vector2();
-        _currentRotationSpeed = 0f;
     }
 
     private void FixedUpdate()
@@ -37,13 +36,13 @@ public class ShipController : MonoBehaviour
         switch (forwardsInput)
         {
             case > 0f:
-                ApplyActiveForwardAcceleration();
+                ApplyForwardForce();
                 break;
             case < 0f:
-                ApplyActiveSlowDeceleration();
+                ApplyActiveDrag();
                 break;
             default:
-                ApplyPassiveSlowDeceleration();
+                ApplyPassiveDrag();
                 break;
         }
     }
@@ -51,44 +50,38 @@ public class ShipController : MonoBehaviour
     private void ProcessRotation()
     {
         float rotateInput = _moveInput.x;
-        switch (rotateInput)
+        if (rotateInput != 0f)
         {
-            case 0f:
-                ApplyPassiveRotationDeceleration();
-                break;
-            default:
-                ApplyActiveRotationAcceleration(-Mathf.Sign(rotateInput));
-                break;
+            ApplyTorque(-Mathf.Sign(rotateInput));
         }
-
-        _rb.rotation = _rb.rotation + _currentRotationSpeed * Time.deltaTime;
     }
 
-    private void ApplyActiveForwardAcceleration()
+    private void ApplyForwardForce()
     {
         var direction = gameObject.transform.rotation * Vector2.up;
-        _rb.velocity = Vector2.MoveTowards(_rb.velocity, direction * MaxSpeed, ForwardAcceleration * Time.deltaTime);
+        _rb.AddForce(direction * ForwardForce);
+        
+        var velocity = _rb.velocity;
+        if (velocity.magnitude > MaxSpeed)
+        {
+            Debug.Log("Max speed");
+            _rb.AddForce(-velocity.normalized * (velocity.magnitude - MaxSpeed));
+        }
     }
 
-    private void ApplyActiveSlowDeceleration()
+    private void ApplyActiveDrag()
     {
-        _rb.velocity = Vector2.MoveTowards(_rb.velocity, Vector2.zero, SlowDeceleration * Time.deltaTime);
+        _rb.drag = Mathf.MoveTowards(_rb.drag, ActiveDrag, DragAcceleration * Time.deltaTime);
     }
 
-    private void ApplyPassiveSlowDeceleration()
+    private void ApplyPassiveDrag()
     {
-        _rb.velocity = Vector2.MoveTowards(_rb.velocity, Vector2.zero, PassiveSpeedDeceleration * Time.deltaTime);
+        _rb.drag = Mathf.MoveTowards(_rb.drag, PassiveDrag, DragAcceleration * Time.deltaTime);
     }
 
-    private void ApplyActiveRotationAcceleration(float sign)
+    private void ApplyTorque(float sign)
     {
-        _currentRotationSpeed = Mathf.MoveTowards(_currentRotationSpeed, sign * MaxRotationSpeed, RotationAcceleration * Time.deltaTime);
-    }
-    
-    private void ApplyPassiveRotationDeceleration()
-    {
-        _currentRotationSpeed =
-            Mathf.MoveTowards(_currentRotationSpeed, 0f, PassiveRotationDeceleration * Time.deltaTime);
+        _rb.AddTorque(sign * TorqueForce);
     }
 
     public void OnMoveInput(InputAction.CallbackContext context)
