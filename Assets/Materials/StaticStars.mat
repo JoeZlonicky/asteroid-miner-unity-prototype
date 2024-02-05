@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Stars
+  m_Name: StaticStars
   m_Shader: {fileID: -6465566751694194690, guid: ccfe1ab28a73ae24fbb6fa2ed949f3eb, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -67,14 +67,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _StarDensity: 0.5
-    - _StarSize: 4.4
+    - _StarDensity: 0.32
+    - _StarSize: 2
     - _StarTwinkleSpeed: 5
     m_Colors:
-    - _BGColor: {r: 0.18560877, g: 0.1940975, b: 0.4056604, a: 1}
+    - _BGColor: {r: 0.0627451, g: 0.078431375, b: 0.12156863, a: 1}
     - _CameraOffset: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _PositionOffset: {r: -0, g: 0, b: -0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _StarColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StarColor: {r: 0.6431373, g: 0.8666667, b: 0.85882354, a: 0.5176471}
   m_BuildTextureStacks: []
