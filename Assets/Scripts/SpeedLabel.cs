@@ -9,7 +9,7 @@ using UnityEngine;
 public class SpeedLabel : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D body;
-    [SerializeField] private float multiplier = 1f;
+    [SerializeField] [Min(0f)] private float multiplier = 1f;
     [SerializeField] private string unit = "m/s";
 
     private TMP_Text _text;

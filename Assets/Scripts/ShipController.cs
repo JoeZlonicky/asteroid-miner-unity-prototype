@@ -1,26 +1,25 @@
-using UnityEngine;
-using UnityEngine.InputSystem;
+using System;
+using UnityEngine; 
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(PlayerInput))]
 public class ShipController : MonoBehaviour
 {
-    [SerializeField] private float forwardForce = 3f;
-    [SerializeField] private float maxSpeed = 20f;
+    [SerializeField] [Min(0f)] private float forwardForce = 3f;
+    [SerializeField] [Min(0f)] private float maxSpeed = 20f;
     
-    [SerializeField] private float passiveDrag = 0.1f;
-    [SerializeField] private float activeDrag = 2f;
-    [SerializeField] private float dragAcceleration = 2f;
+    [SerializeField] [Min(0f)] private float passiveDrag = 0.1f;
+    [SerializeField] [Min(0f)] private float activeDrag = 2f;
+    [SerializeField] [Min(0f)] private float dragAcceleration = 2f;
 
-    [SerializeField] private float torqueForce  = 1.5f;
+    [SerializeField] [Min(0f)] private float torqueForce  = 1.5f;
+    
+    [NonSerialized] public Vector2 InputVector = new();
     
     private Rigidbody2D _rb;
-    private Vector2 _moveInput;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _moveInput = new Vector2();
     }
 
     private void FixedUpdate()
@@ -31,7 +30,7 @@ public class ShipController : MonoBehaviour
 
     private void ProcessVelocity()
     {
-        float forwardsInput = _moveInput.y;
+        float forwardsInput = InputVector.y;
         switch (forwardsInput)
         {
             case > 0f:
@@ -48,7 +47,7 @@ public class ShipController : MonoBehaviour
 
     private void ProcessRotation()
     {
-        float rotateInput = _moveInput.x;
+        float rotateInput = InputVector.x;
         if (rotateInput != 0f)
         {
             ApplyTorque(-Mathf.Sign(rotateInput));
@@ -79,10 +78,5 @@ public class ShipController : MonoBehaviour
     private void ApplyTorque(float sign)
     {
         _rb.AddTorque(sign * torqueForce);
-    }
-
-    public void OnMoveInput(InputAction.CallbackContext context)
-    {
-        _moveInput = context.ReadValue<Vector2>();
     }
 }
