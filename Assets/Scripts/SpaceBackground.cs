@@ -2,24 +2,25 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-[Serializable]
-public class BackgroundLayer
-{
-    public RawImage starImage;
-    public float parallaxStrength;
-    private static readonly int PositionOffset = Shader.PropertyToID("_PositionOffset");
-
-    public void UpdateOffset(Vector4 offset)
-    {
-        offset.y *= -1;
-        starImage.material.SetVector(PositionOffset, offset * parallaxStrength);
-    }
-}
 
 public class SpaceBackground : MonoBehaviour
 {
-    public BackgroundLayer[] layers;
-    public Camera currentCamera;
+    [Serializable]
+    private struct Layer
+    {
+        public RawImage starImage;
+        public float parallaxStrength;
+        public static readonly int PositionOffset = Shader.PropertyToID("_PositionOffset");
+
+        public void UpdateOffset(Vector4 offset)
+        {
+            offset.y *= -1;
+            starImage.material.SetVector(PositionOffset, offset * parallaxStrength);
+        }
+    }
+    
+    [SerializeField] private Layer[] layers;
+    [SerializeField] private Camera currentCamera;
 
     private void Awake()
     {
