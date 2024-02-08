@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4323158893231275894}
-  - component: {fileID: 586816050841864450}
+  - component: {fileID: 4347903080506909552}
   m_Layer: 0
   m_Name: BlasterPoint
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &586816050841864450
+--- !u!114 &4347903080506909552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0de3bc8ce6fd6f24c99b3326d9e4c77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowLength: 0.61
+  arrowLength: 1
