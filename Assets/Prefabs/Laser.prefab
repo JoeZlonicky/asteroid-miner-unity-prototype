@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 1929191311636851680}
   - component: {fileID: 100228127876854106}
   - component: {fileID: 8972731487666733705}
+  - component: {fileID: 5164667124211198094}
   m_Layer: 6
   m_Name: Laser
   m_TagString: Untagged
@@ -322,5 +323,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 6536840886307114440, guid: b8aa191c2663a374abef3d6749571b14, type: 3}
   explosionPoint: {fileID: 2011443694158236160}
+  damage: 1
   maxLifetimeSeconds: 5
+--- !u!114 &5164667124211198094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868862547132712707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f412be66b9941dcaac2db9ee1fd55d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 20
