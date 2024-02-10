@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233da81af24573e4584f9f82bb1d5884, type: 3}
+  m_Name: Ore
+  m_EditorClassIdentifier: 
+  displayName: Ore
+  icon: {fileID: 2800000, guid: 532b9cdb5d479ff4cab50d669a982c85, type: 3}
+  pickupPrefab: {fileID: 8543206273787980068, guid: bf05f30cf1a56614cac48200c5943e0d, type: 3}
