@@ -1,18 +1,17 @@
 using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class LaserBlaster : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D laserPrefab;
-    
+
     [SerializeField] [Min(0f)] private float cooldownSeconds = 0.1f;
     [SerializeField] private GameObject[] outputPoints;
+    private int _currentInputPointIndex;
+
+    private float _lastFireTimeSeconds;
 
     [NonSerialized] public bool Firing = false;
-    
-    private float _lastFireTimeSeconds = 0f;
-    private int _currentInputPointIndex = 0;
 
     private void Awake()
     {
@@ -30,9 +29,9 @@ public class LaserBlaster : MonoBehaviour
 
     private void Fire()
     {
-        Transform t = outputPoints[_currentInputPointIndex].transform;
+        var t = outputPoints[_currentInputPointIndex].transform;
         Instantiate(laserPrefab.gameObject, t.position, t.rotation);
-        
+
         _currentInputPointIndex = (_currentInputPointIndex + 1) % outputPoints.Length;
         _lastFireTimeSeconds = Time.time;
     }

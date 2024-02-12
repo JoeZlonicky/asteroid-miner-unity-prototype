@@ -14,8 +14,8 @@ namespace UI
 
         private void Awake()
         {
-            Debug.Assert(body != null);
             _text = GetComponent<TMP_Text>();
+            Debug.Assert(body != null);
         }
 
         private void Update()

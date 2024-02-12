@@ -56,7 +56,7 @@ public class ShipController : MonoBehaviour
 
     private void ApplyForwardForce()
     {
-        var direction = gameObject.transform.rotation * Vector2.up;
+        var direction = transform.rotation * Vector2.up;
         _rb.AddForce(direction * forwardForce);
         
         var velocity = _rb.velocity;

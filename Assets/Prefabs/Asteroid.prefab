@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970cefa543d046641aca566c8988a2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 1
 --- !u!114 &5142955688981349307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,3 +295,4 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
   nToDrop: 5
   dropRadius: 1
+  passiveDriftForce: 10

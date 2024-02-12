@@ -10,9 +10,9 @@ namespace Misc
         private void OnDrawGizmos()
         {
             if (Application.isPlaying) return;
-
+            
+            var t = transform;
             UnityEditor.Handles.color = Color.magenta;
-            Transform t = gameObject.transform;
             UnityEditor.Handles.ArrowHandleCap(0, t.position, t.rotation * Quaternion.LookRotation(Vector3.right), 
                 arrowLength, EventType.Repaint);
         }
