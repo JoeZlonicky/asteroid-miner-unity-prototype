@@ -44,3 +44,6 @@ TagManager:
   - name: VFX
     uniqueID: 53207061
     locked: 0
+  - name: WorldUI
+    uniqueID: 3803257459
+    locked: 0
