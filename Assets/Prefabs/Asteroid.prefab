@@ -295,4 +295,4 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
   nToDrop: 5
   dropRadius: 1
-  passiveDriftForce: 10
+  passiveDriftForce: 20

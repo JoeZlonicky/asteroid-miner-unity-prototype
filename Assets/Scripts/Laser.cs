@@ -8,22 +8,12 @@ public class Laser : MonoBehaviour
 
     [SerializeField] [Min(0)] private int damage = 1;
     [SerializeField] [Min(0f)] private float maxLifetimeSeconds = 5f;
-    
-    private float _lifetimeSeconds;
 
     private void Awake()
     {
+        Destroy(gameObject, maxLifetimeSeconds);
         Debug.Assert(explosionPrefab != null);
         Debug.Assert(explosionPoint != null);
-    }
-
-    private void Update()
-    {
-        _lifetimeSeconds += Time.deltaTime;
-        if (_lifetimeSeconds > maxLifetimeSeconds)
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
