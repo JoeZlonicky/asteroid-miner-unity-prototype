@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class SpaceBackground : MonoBehaviour
 {
-    [SerializeField] private Layer[] layers;
     [SerializeField] private Camera currentCamera;
+    [SerializeField] private Layer[] layers;
 
     private void Awake()
     {

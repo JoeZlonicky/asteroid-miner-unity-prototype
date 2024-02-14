@@ -60,7 +60,7 @@ public class ShipController : MonoBehaviour
         _rb.AddForce(direction * forwardForce);
         
         var velocity = _rb.velocity;
-        if (!(velocity.magnitude > maxSpeed)) return;
+        if (velocity.magnitude < maxSpeed) return;
         
         _rb.AddForce(-velocity.normalized * (velocity.magnitude - maxSpeed));
     }
