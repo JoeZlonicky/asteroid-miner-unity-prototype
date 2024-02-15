@@ -53,6 +53,6 @@ public class RobotController : MonoBehaviour
 
         var current = transform.eulerAngles.z;
         var goal = Vector2.SignedAngle(Vector2.up, _lastNonZeroInput);
-        _rb.SetRotation(Mathf.MoveTowardsAngle(current, goal, rotationSpeed * Time.deltaTime));
+        transform.rotation = Quaternion.Euler(Vector3.forward * Mathf.MoveTowardsAngle(current, goal, rotationSpeed * Time.deltaTime));
     }
 }
