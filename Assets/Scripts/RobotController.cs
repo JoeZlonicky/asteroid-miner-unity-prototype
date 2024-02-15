@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class RobotController : MonoBehaviour
 {
-    [SerializeField] [Min(0f)] private float movementForce = 3f;
-    [SerializeField] [Min(0f)] private float maxSpeed = 20f;
-    [SerializeField] [Min(0f)] private float rotationSpeed = 10f;
+    [SerializeField] [Min(0f)] private float movementForce = 50f;
+    [SerializeField] [Min(0f)] private float rotationSpeed = 500f;
 
     public Vector2 InputVector
     {
@@ -38,13 +37,8 @@ public class RobotController : MonoBehaviour
     private void ProcessVelocity()
     {
         if (InputVector.magnitude == 0f) return;
-        
+
         _rb.AddForce(InputVector.normalized * movementForce);
-        
-        var velocity = _rb.velocity;
-        if (velocity.magnitude < maxSpeed) return;
-        
-        _rb.AddForce(-velocity.normalized * (velocity.magnitude - maxSpeed));
     }
 
     private void ProcessRotation()

@@ -163,8 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd11602affdc3b14c8e8879bfc0f80af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementForce: 40
-  maxSpeed: 30
+  movementForce: 50
   rotationSpeed: 500
 --- !u!114 &8479821519252597104
 MonoBehaviour:
