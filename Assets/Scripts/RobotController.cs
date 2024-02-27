@@ -30,18 +30,18 @@ public class RobotController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ProcessVelocity();
-        ProcessRotation();
+        MoveInDirectionOfInput();
+        RotateTowardsLastDirection();
     }
 
-    private void ProcessVelocity()
+    private void MoveInDirectionOfInput()
     {
         if (InputVector.magnitude == 0f) return;
 
         _rb.AddForce(InputVector.normalized * movementForce);
     }
 
-    private void ProcessRotation()
+    private void RotateTowardsLastDirection()
     {
         if (_lastNonZeroInput.magnitude == 0f) return;
 
