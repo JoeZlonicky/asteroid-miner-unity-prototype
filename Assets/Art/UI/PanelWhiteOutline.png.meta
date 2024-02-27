@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 779ff6be23fd2ef4198bec041223513c
+guid: b6709761a60e9284a933e53b63ef73d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,13 +43,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 60, y: 60, z: 60, w: 60}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpaceStationTilemap_0
+      name: PanelWhiteOutline_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,24 +121,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -62, y: -62}
-        - {x: -24, y: 21}
-        - {x: 63, y: 64}
-        - {x: 61, y: 0}
-        - {x: 20, y: -1}
-        - {x: 0, y: -21}
-        - {x: -2, y: -61}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 193e6c4bf9337214ab6b380cd19a406e
-      internalID: 1917382269
+      spriteID: ba0bdb1596307d142a58e6ad34af9eeb
+      internalID: -2056365697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_1
+      name: PanelWhiteOutline_1
       rect:
         serializedVersion: 2
         x: 128
@@ -149,21 +142,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -64, y: 1}
-        - {x: -64, y: 64}
-        - {x: 64, y: 64}
-        - {x: 64, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1afea667c6bc9d14084f45c1f5202811
-      internalID: -1651657290
+      spriteID: 88b8a0801d4007a45978705bd614eb66
+      internalID: -484992163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_2
+      name: PanelWhiteOutline_2
       rect:
         serializedVersion: 2
         x: 256
@@ -174,23 +163,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 1, y: -20}
-        - {x: -21, y: 1}
-        - {x: -64, y: 1}
-        - {x: -64, y: 64}
-        - {x: 64, y: -64}
-        - {x: 0, y: -64}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ff1409ddd226e843b4410c69c66c406
-      internalID: -218612933
+      spriteID: 24ee6181cd414f04b988e1b078a3861f
+      internalID: 662842454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_3
+      name: PanelWhiteOutline_3
       rect:
         serializedVersion: 2
         x: 0
@@ -201,21 +184,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -64, y: -64}
-        - {x: -64, y: 64}
-        - {x: -1, y: 64}
-        - {x: -1, y: -64}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cea05a23c6fa17449cdc04c51ea1ed3
-      internalID: -611019828
+      spriteID: cccc86404bc906f46a6a0edcb642cc56
+      internalID: -1303681027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_4
+      name: PanelWhiteOutline_4
       rect:
         serializedVersion: 2
         x: 128
@@ -229,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5bff3003698df7489c9c793db4bb8d0
-      internalID: 1758260341
+      spriteID: 07b19bf134f67894bb9c6f9ee3603ed8
+      internalID: -693181630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_5
+      name: PanelWhiteOutline_5
       rect:
         serializedVersion: 2
         x: 256
@@ -247,21 +226,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 1, y: -64}
-        - {x: 0, y: 64}
-        - {x: 64, y: 64}
-        - {x: 64, y: -64}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c4518c5de6215e40999b05b5de1d082
-      internalID: -60112611
+      spriteID: 627d546addcd22a439e0707f2e3e22aa
+      internalID: 618044758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_6
+      name: PanelWhiteOutline_6
       rect:
         serializedVersion: 2
         x: 0
@@ -272,23 +247,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 64, y: -64}
-        - {x: -64, y: 64}
-        - {x: 0, y: 64}
-        - {x: -1, y: 22}
-        - {x: 20, y: 0}
-        - {x: 64, y: 0}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 312fbc0b299eca8468cab9d1710d6f29
-      internalID: -1596857364
+      spriteID: 35f882909104929448ab333a31b281dd
+      internalID: 915217977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_7
+      name: PanelWhiteOutline_7
       rect:
         serializedVersion: 2
         x: 128
@@ -299,21 +268,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -64, y: -64}
-        - {x: -64, y: 0}
-        - {x: 64, y: 1}
-        - {x: 64, y: -64}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8af285198152de6428442d0daa72470e
-      internalID: 805091584
+      spriteID: 70fa8ae1386b1dc4c88bcc1ce37ec5ad
+      internalID: 655551066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceStationTilemap_8
+      name: PanelWhiteOutline_8
       rect:
         serializedVersion: 2
         x: 256
@@ -324,17 +289,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -64, y: 0}
-        - {x: -21, y: 0}
-        - {x: -1, y: 20}
-        - {x: 0, y: 64}
-        - {x: 64, y: 64}
-        - {x: -64, y: -64}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c0ba21e84f243a48965c46bd6cfddc9
-      internalID: -1905692299
+      spriteID: 282aac3e02536e9488223fbc9a3d65f3
+      internalID: 1257085979
       vertices: []
       indices: 
       edges: []
@@ -343,22 +302,22 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpaceStationTilemap_0: 1917382269
-      SpaceStationTilemap_1: -1651657290
-      SpaceStationTilemap_2: -218612933
-      SpaceStationTilemap_3: -611019828
-      SpaceStationTilemap_4: 1758260341
-      SpaceStationTilemap_5: -60112611
-      SpaceStationTilemap_6: -1596857364
-      SpaceStationTilemap_7: 805091584
-      SpaceStationTilemap_8: -1905692299
+      PanelWhiteOutline_0: -2056365697
+      PanelWhiteOutline_1: -484992163
+      PanelWhiteOutline_2: 662842454
+      PanelWhiteOutline_3: -1303681027
+      PanelWhiteOutline_4: -693181630
+      PanelWhiteOutline_5: 618044758
+      PanelWhiteOutline_6: 915217977
+      PanelWhiteOutline_7: 655551066
+      PanelWhiteOutline_8: 1257085979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
