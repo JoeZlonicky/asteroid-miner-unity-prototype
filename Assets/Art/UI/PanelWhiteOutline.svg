@@ -26,15 +26,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="0.25858552"
-     inkscape:cx="527.87179"
-     inkscape:cy="431.19197"
+     inkscape:zoom="1.4627806"
+     inkscape:cx="171.2492"
+     inkscape:cy="249.18296"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showgrid="false" />
   <defs
      id="defs1">
     <inkscape:path-effect
@@ -42,8 +43,8 @@
        id="path-effect1"
        is_visible="true"
        lpeversion="1"
-       nodesatellites_param="C,0,0,1,0,13.229167,0,1 @ C,0,0,1,0,13.229167,0,1 @ C,0,0,1,0,13.229167,0,1 @ C,0,0,1,0,13.229167,0,1"
-       radius="50"
+       nodesatellites_param="C,0,0,1,0,5,0,1 @ C,0,0,1,0,5,0,1 @ C,0,0,1,0,5,0,1 @ C,0,0,1,0,5,0,1"
+       radius="5"
        unit="px"
        method="auto"
        mode="C"
@@ -79,7 +80,7 @@
      transform="matrix(1.0010249,0,0,0.9677831,-140.82756,-128.78884)"
      style="stroke-width:1.0165">
     <path
-       style="fill:#151d28;stroke:#ebede9;stroke-width:1.69004;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#151d28;stroke:#577277;stroke-width:1.69004;stroke-dasharray:none;stroke-opacity:1"
        id="rect1"
        width="107.81419"
        height="108.51152"
@@ -87,7 +88,7 @@
        y="1.58751"
        inkscape:path-effect="#path-effect1"
        sodipodi:type="rect"
-       d="m 14.816677,1.58751 h 81.35586 L 109.4017,14.816677 V 96.869863 L 96.172537,110.09903 H 14.816677 L 1.58751,96.869863 V 14.816677 Z"
+       d="m 6.58751,1.58751 h 97.81419 l 5,5 v 98.51152 l -5,5 H 6.58751 l -5,-5 V 6.58751 Z"
        transform="matrix(0.94139713,0,0,0.96747515,139.9844,132.3578)" />
   </g>
 </svg>

@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Pickup : MonoBehaviour
 {
+    
     public delegate void CollectAction();
     public event CollectAction OnCollect;
     
