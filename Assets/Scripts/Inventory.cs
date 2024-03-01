@@ -25,8 +25,8 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(ItemData itemData, int n = 1)
     {
-        var isNew = _items.ContainsKey(itemData);
-        _items[itemData] = _items.GetValueOrDefault(itemData, 1) + 1;
+        var isNew = !_items.ContainsKey(itemData);
+        _items[itemData] = _items.GetValueOrDefault(itemData, 0) + 1;
         OnItemAdded?.Invoke(itemData, n, isNew);
     }
 
@@ -59,6 +59,12 @@ public class Inventory : MonoBehaviour
         
         OnItemRemoved?.Invoke(itemData, n, isLastOf);
     }
+
+    public Dictionary<ItemData, int>.KeyCollection Items()
+    {
+        return _items.Keys;
+    }
+    
 
     [Serializable]
     private class ItemQuantityPair
