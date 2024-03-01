@@ -254,6 +254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d603c11ed1f82e442a79a08f7531cb8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4978408597377017260}
+  pickupDropper: {fileID: 6893458706808561517}
+  health: {fileID: 3373401362153748050}
 --- !u!114 &3373401362153748050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970cefa543d046641aca566c8988a2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  <MaxHealth>k__BackingField: 10
 --- !u!114 &5142955688981349307
 MonoBehaviour:
   m_ObjectHideFlags: 0

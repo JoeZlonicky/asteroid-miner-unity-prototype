@@ -7,8 +7,8 @@ public class LaserBlaster : MonoBehaviour
 
     [SerializeField] [Min(0f)] private float cooldownSeconds = 0.1f;
     [SerializeField] private GameObject[] outputPoints;
+    
     private int _currentInputPointIndex;
-
     private float _lastFireTimeSeconds;
 
     [NonSerialized] public bool Firing = false;

@@ -1,6 +1,6 @@
+using Components;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class Laser : MonoBehaviour
 {
     [SerializeField] private GameObject explosionPrefab;
@@ -18,7 +18,7 @@ public class Laser : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        var hitBox = other.gameObject.GetComponent<HitBox>();
+        var hitBox = other.GetComponent<HitBox>();
         if (hitBox != null && hitBox.health)
         {
             hitBox.health.DealDamage(damage);

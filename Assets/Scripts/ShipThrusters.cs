@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Thrusters : MonoBehaviour
+public class ShipThrusters : MonoBehaviour
 {
     [SerializeField] private ShipController ship;
     [SerializeField] private ParticleSystem leftParticles;

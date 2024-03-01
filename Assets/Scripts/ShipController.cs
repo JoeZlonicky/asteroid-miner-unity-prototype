@@ -47,7 +47,7 @@ public class ShipController : MonoBehaviour
 
     private void ProcessRotation()
     {
-        float rotateInput = InputVector.x;
+        var rotateInput = InputVector.x;
         if (rotateInput != 0f)
         {
             ApplyTorque(-Mathf.Sign(rotateInput));

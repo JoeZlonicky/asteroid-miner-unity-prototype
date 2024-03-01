@@ -187,6 +187,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1151919742}
     m_Modifications:
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
+      value: 4b99b9d6-5cb0-46b6-b0d9-bbcf09be72e9
+      objectReference: {fileID: 0}
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
+      value: Player/Inventory[/Keyboard/i]
+      objectReference: {fileID: 0}
     - target: {fileID: 476806034853545566, guid: 3c2b8993e5960714185a391918741650, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.37
@@ -230,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 1665572848045850277, guid: 3c2b8993e5960714185a391918741650, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1151919743}
+      objectReference: {fileID: 0}
     - target: {fileID: 2562767834971968899, guid: 3c2b8993e5960714185a391918741650, type: 3}
       propertyPath: m_text
       value: Board
@@ -251,6 +263,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6286289661827651027, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1045488779}
     - targetCorrespondingSourceObject: {fileID: 2856906950299383255, guid: 3c2b8993e5960714185a391918741650, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -260,6 +275,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 476806034853545566, guid: 3c2b8993e5960714185a391918741650, type: 3}
   m_PrefabInstance: {fileID: 1045488775}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1045488777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6286289661827651027, guid: 3c2b8993e5960714185a391918741650, type: 3}
+  m_PrefabInstance: {fileID: 1045488775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1045488778 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1665572848045850277, guid: 3c2b8993e5960714185a391918741650, type: 3}
+  m_PrefabInstance: {fileID: 1045488775}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045488777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8daa6fc423ac1f499c49f03f5b6c7ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1045488779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045488777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c194461dcd58d53468720143c2ff4e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableTrigger: {fileID: 1045488778}
+  sceneName: Space
 --- !u!1 &1151919738
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +317,6 @@ GameObject:
   - component: {fileID: 1151919741}
   - component: {fileID: 1151919740}
   - component: {fileID: 1151919739}
-  - component: {fileID: 1151919743}
   m_Layer: 0
   m_Name: DockedShip
   m_TagString: Untagged
@@ -536,19 +580,6 @@ Transform:
   - {fileID: 1045488776}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1151919743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151919738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c194461dcd58d53468720143c2ff4e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Space
 --- !u!1 &1390865570
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,6 +7411,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1151919742}
     m_Modifications:
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
+      value: 4b99b9d6-5cb0-46b6-b0d9-bbcf09be72e9
+      objectReference: {fileID: 0}
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
+      value: Player/Inventory[/Keyboard/i]
+      objectReference: {fileID: 0}
     - target: {fileID: 476806034853545566, guid: 3c2b8993e5960714185a391918741650, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.42
@@ -7423,7 +7466,7 @@ PrefabInstance:
     - target: {fileID: 1665572848045850277, guid: 3c2b8993e5960714185a391918741650, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1151919743}
+      objectReference: {fileID: 0}
     - target: {fileID: 2562767834971968899, guid: 3c2b8993e5960714185a391918741650, type: 3}
       propertyPath: m_text
       value: Board
@@ -7444,10 +7487,43 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6286289661827651027, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8839050354827194994}
     - targetCorrespondingSourceObject: {fileID: 2856906950299383255, guid: 3c2b8993e5960714185a391918741650, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 3c2b8993e5960714185a391918741650, type: 3}
+--- !u!1 &8839050354827194993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6286289661827651027, guid: 3c2b8993e5960714185a391918741650, type: 3}
+  m_PrefabInstance: {fileID: 8839050354827194992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8839050354827194994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8839050354827194993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c194461dcd58d53468720143c2ff4e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableTrigger: {fileID: 8839050354827194995}
+  sceneName: Space
+--- !u!114 &8839050354827194995 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1665572848045850277, guid: 3c2b8993e5960714185a391918741650, type: 3}
+  m_PrefabInstance: {fileID: 8839050354827194992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8839050354827194993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8daa6fc423ac1f499c49f03f5b6c7ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

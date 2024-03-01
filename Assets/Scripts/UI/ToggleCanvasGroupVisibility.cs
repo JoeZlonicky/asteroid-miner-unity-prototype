@@ -6,6 +6,7 @@ namespace UI
     public class ToggleCanvasGroupVisibility : MonoBehaviour
     {
         [SerializeField] private CanvasGroup canvasGroup;
+        
         private bool _isVisible;
 
         private void Awake()

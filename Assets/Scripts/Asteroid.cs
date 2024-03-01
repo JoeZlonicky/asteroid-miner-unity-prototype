@@ -1,3 +1,4 @@
+using Components;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -5,29 +6,29 @@ using UnityEngine;
 [RequireComponent(typeof(PickupDropper))]
 public class Asteroid : MonoBehaviour
 {
-    private Animator _animator;
-    private PickupDropper _pickupDropper;
-    private Health _health;
+    [SerializeField] private Animator animator;
+    [SerializeField] private PickupDropper pickupDropper;
+    [SerializeField] private Health health;
     
     private static readonly int Hit = Animator.StringToHash("Hit");
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
-        _pickupDropper = GetComponent<PickupDropper>();
-        _health = GetComponent<Health>();
-        _health.OnHit += OnHit;
-        _health.OnDeath += OnDeath;
+        animator = GetComponent<Animator>();
+        pickupDropper = GetComponent<PickupDropper>();
+        health = GetComponent<Health>();
+        health.OnHit += OnHit;
+        health.OnDeath += OnDeath;
     }
 
     private void OnHit(int amount)
     {
-        _animator.SetTrigger(Hit);
+        animator.SetTrigger(Hit);
     }
 
     private void OnDeath()
     {
-        _pickupDropper.Drop();
+        pickupDropper.Drop();
         Destroy(gameObject);
     }
 }

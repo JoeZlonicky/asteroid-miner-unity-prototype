@@ -551,6 +551,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 79084030}
     m_Modifications:
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
+      value: 4b99b9d6-5cb0-46b6-b0d9-bbcf09be72e9
+      objectReference: {fileID: 0}
+    - target: {fileID: 312301886254016784, guid: 3c2b8993e5960714185a391918741650, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
+      value: Player/Inventory[/Keyboard/i]
+      objectReference: {fileID: 0}
     - target: {fileID: 476806034853545566, guid: 3c2b8993e5960714185a391918741650, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.84
@@ -631,7 +643,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: InteractPoint
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4768536847511844708, guid: 3c2b8993e5960714185a391918741650, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -647,6 +660,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 476806034853545566, guid: 3c2b8993e5960714185a391918741650, type: 3}
   m_PrefabInstance: {fileID: 116408035}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &116408037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1665572848045850277, guid: 3c2b8993e5960714185a391918741650, type: 3}
+  m_PrefabInstance: {fileID: 116408035}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289087141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8daa6fc423ac1f499c49f03f5b6c7ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &328016393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2031,7 +2055,6 @@ GameObject:
   - component: {fileID: 1223203699}
   - component: {fileID: 1223203700}
   - component: {fileID: 1223203701}
-  - component: {fileID: 1223203702}
   - component: {fileID: 1223203703}
   m_Layer: 5
   m_Name: InventoryUI
@@ -2111,104 +2134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1223203700}
---- !u!114 &1223203702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223203697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: f5dc55fe2077998499afb541ff601a2f, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 92d9bee2-5825-4544-adb5-25acf6b9b540
-    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a2dfddd6-f809-4158-8648-eecd05cf75b7
-    m_ActionName: Player/Fire[/Mouse/leftButton,/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 1d1d746a-ebbe-4572-9c57-a8c31ec19908
-    m_ActionName: Player/Interact[/Keyboard/e]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 74555a76-325a-4b73-95df-aa16f24f0572
-    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: cf2a205d-cb68-4e07-8a31-e9d28e5083fc
-    m_ActionName: UI/Submit[/Keyboard/enter]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 0972005b-e12a-4978-9e88-8881312fc786
-    m_ActionName: UI/Cancel[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 0403053f-af15-4d46-a6a0-59b6e77a6d14
-    m_ActionName: UI/Point[/Mouse/position]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 6d86beca-8a78-40ac-aeb5-40bfc7af1995
-    m_ActionName: UI/Click[/Mouse/leftButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a5186b07-fd5b-4fba-9182-cf1b905049ba
-    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c5303d92-c412-4e0b-b595-645358c785e9
-    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e76dc098-4906-4adb-a988-342da2fab4fb
-    m_ActionName: UI/RightClick[/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 682dcdd5-24ad-4dab-a28d-9edca029cf01
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 16a4e5c4-b1eb-4f90-91d4-e63c9113612e
-    m_ActionName: UI/TrackedDeviceOrientation
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1223203703}
-        m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: OnInventoryInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 4b99b9d6-5cb0-46b6-b0d9-bbcf09be72e9
-    m_ActionName: Player/Inventory[/Keyboard/i]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &1223203703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2221,6 +2146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 105c88685eb5f6740aca70bbb1934b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visibilityToggle: {fileID: 1223203701}
 --- !u!1 &1289087141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6286289661827651027, guid: 3c2b8993e5960714185a391918741650, type: 3}
@@ -2238,6 +2164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c194461dcd58d53468720143c2ff4e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactableTrigger: {fileID: 116408037}
   sceneName: SpaceStationAlpha
 --- !u!1001 &1333807026
 PrefabInstance:

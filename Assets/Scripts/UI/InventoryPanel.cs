@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Components;
+using ScriptableObjects;
 using UnityEngine;
 
 namespace UI
@@ -6,8 +8,9 @@ namespace UI
     public class InventoryPanel : MonoBehaviour
     {
         public Inventory connectedInventory;
-        private Dictionary<ItemData, ItemSlot> _correspondingSlots;
+        
         private ItemSlot[] _itemSlots;
+        private Dictionary<ItemData, ItemSlot> _correspondingSlots;
 
         private void Awake()
         {
