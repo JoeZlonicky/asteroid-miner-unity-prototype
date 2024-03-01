@@ -1,8 +1,6 @@
-using System;
 using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 namespace Input
 {
@@ -31,7 +29,7 @@ namespace Input
             _inventoryAction.Disable();
         }
 
-        public void OnInventoryInput(InputAction.CallbackContext context)
+        private void OnInventoryInput(InputAction.CallbackContext context)
         {
             visibilityToggle.Toggle();
         }
