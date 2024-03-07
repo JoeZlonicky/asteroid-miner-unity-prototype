@@ -11,13 +11,6 @@ namespace UI
         [SerializeField] private TMP_Text countLabel;
 
         private bool _isFilled;
-
-        private void Awake()
-        {
-            Debug.Assert(image != null);
-            Debug.Assert(countLabel != null);
-            Clear();
-        }
         
         public void SetItemCount(ItemData itemData, int n)
         {

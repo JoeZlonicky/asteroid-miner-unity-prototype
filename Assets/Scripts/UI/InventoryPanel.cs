@@ -15,6 +15,10 @@ namespace UI
         {
             _correspondingSlots = new Dictionary<ItemData, ItemSlot>();
             _itemSlots = GetComponentsInChildren<ItemSlot>();
+            foreach (var itemSlot in _itemSlots)
+            {
+                itemSlot.Clear();
+            }
         }
 
         protected void ConnectInventory(Inventory inventory)
