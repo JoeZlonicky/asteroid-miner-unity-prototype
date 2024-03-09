@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="527.04071mm"
-   height="402.49066mm"
-   viewBox="0 0 527.0407 402.49066"
+   width="2102.5647"
+   height="1578.1508"
+   viewBox="0 0 525.64117 394.53768"
    version="1.1"
    id="svg1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
@@ -25,13 +25,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
+     inkscape:document-units="px"
      inkscape:zoom="0.25858552"
-     inkscape:cx="852.71596"
-     inkscape:cy="752.16895"
+     inkscape:cx="848.84877"
+     inkscape:cy="744.43457"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -195,9 +195,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="matrix(2.5346507,0,0,2.3583951,-60.892889,-216.19919)">
+     transform="matrix(2.5346507,0,0,2.3583951,-61.592658,-217.3619)">
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect5"
        width="43.410477"
        height="8.6820946"
@@ -208,7 +208,7 @@
        d="m 101.02594,100.92935 h 37.06047 l 3.175,3.175 v 2.3321 l -3.175,3.175 h -37.06047 l -3.175003,-3.175 v -2.3321 z"
        transform="translate(0,2.2437572)" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect6"
        width="74.521317"
        height="15.917173"
@@ -218,7 +218,7 @@
        sodipodi:type="rect"
        d="m 159.3135,135.30661 h 68.17132 l 3.175,3.175 v 9.56717 l -3.175,3.175 H 159.3135 l -3.175,-3.175 v -9.56717 z" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect2"
        width="35.451889"
        height="81.756393"
@@ -229,7 +229,7 @@
        d="m 140.94117,179.28012 h 29.10189 l 3.175,3.175 v 75.40639 l -3.175,3.175 h -29.10189 l -3.175,-3.175 v -75.40639 z"
        transform="translate(0,-2.6031127)" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect1"
        width="162.78929"
        height="70.903778"
@@ -239,7 +239,7 @@
        sodipodi:type="rect"
        d="m 28.497777,109.24969 156.439293,0 3.175,3.175 v 64.55378 l -3.175,3.175 H 28.497777 l -3.175,-3.175 v -64.55378 z" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect3"
        width="76.691841"
        height="11.937881"
@@ -249,7 +249,7 @@
        sodipodi:type="rect"
        d="m 121.04472,198.45308 h 70.34184 l 3.175,3.175 v 5.58788 l -3.175,3.175 h -70.34184 l -3.175,-3.175 0,-5.58788 z" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect3-7"
        width="76.691841"
        height="11.937881"
@@ -259,7 +259,7 @@
        sodipodi:type="rect"
        d="m 121.29391,226.97507 h 70.34184 l 3.175,3.175 v 5.58788 l -3.175,3.175 h -70.34184 l -3.175,-3.175 v -5.58788 z" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-linejoin:miter;stroke-dasharray:none;paint-order:normal"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-linejoin:miter;stroke-dasharray:none;paint-order:normal"
        id="rect4"
        width="17.767872"
        height="106.86224"
@@ -269,7 +269,7 @@
        inkscape:path-effect="#path-effect2"
        d="M 43.287759,93.187698 H 54.70563 l 3.175,3.175 V 196.87494 l -3.175,3.175 H 43.287759 l -3.175,-3.175 V 96.362698 Z" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.59721;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect7"
        width="11.576126"
        height="45.942753"
