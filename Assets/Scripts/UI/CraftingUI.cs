@@ -9,37 +9,37 @@ namespace UI
         [SerializeField] private ItemSlot[] ingredientSlots;
         [SerializeField] private ItemSlot[] productSlots;
 
-        private Recipe _recipe;
+        private RecipeData _recipeData;
 
-        public void SetRecipe(Recipe recipe)
+        public void SetRecipe(RecipeData recipeData)
         {
-            Debug.Assert(recipe.ingredients.Length <= ingredientSlots.Length);
-            Debug.Assert(recipe.products.Length <= productSlots.Length);
+            Debug.Assert(recipeData.ingredients.Length <= ingredientSlots.Length);
+            Debug.Assert(recipeData.products.Length <= productSlots.Length);
         
-            _recipe = recipe;
+            _recipeData = recipeData;
         
             for (var i = 0; i < ingredientSlots.Length; ++i)
             {
-                ingredientSlots[i].gameObject.SetActive(i < _recipe.ingredients.Length);
-                if (i >= _recipe.ingredients.Length) continue;
+                ingredientSlots[i].gameObject.SetActive(i < _recipeData.ingredients.Length);
+                if (i >= _recipeData.ingredients.Length) continue;
             
-                var itemQuantity = _recipe.ingredients[i];
+                var itemQuantity = _recipeData.ingredients[i];
                 ingredientSlots[i].SetItemCount(itemQuantity.itemData, itemQuantity.quantity);
             }
 
             for (var i = 0; i < productSlots.Length; ++i)
             {
-                productSlots[i].gameObject.SetActive(i < _recipe.products.Length);
-                if (i >= _recipe.products.Length) continue;
+                productSlots[i].gameObject.SetActive(i < _recipeData.products.Length);
+                if (i >= _recipeData.products.Length) continue;
             
-                var itemQuantity = _recipe.products[i];
+                var itemQuantity = _recipeData.products[i];
                 productSlots[i].SetItemCount(itemQuantity.itemData, itemQuantity.quantity);
             }
         }
 
         public void UpdateSlots(Inventory inventory)
         {
-            Debug.Assert(_recipe != null);
+            Debug.Assert(_recipeData != null);
         }
     }
 }

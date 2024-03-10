@@ -6,7 +6,7 @@ using UnityEngine;
 namespace ScriptableObjects
 {
     [CreateAssetMenu(fileName="Recipe", menuName="ScriptableObjects/Recipe")]
-    public class Recipe : ScriptableObject
+    public class RecipeData : ScriptableObject
     {
         public ItemQuantity[] ingredients;
         public ItemQuantity[] products;

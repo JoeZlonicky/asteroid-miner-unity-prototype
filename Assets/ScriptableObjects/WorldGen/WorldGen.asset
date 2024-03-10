@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d1a840c733f844d8617001f5b9525c, type: 3}
+  m_Name: WorldGen
+  m_EditorClassIdentifier: 
+  rings:
+  - spawns: []
+    radialWidth: 20
+    centricDensity: 0
+    radialDensity: 0
+  - spawns:
+    - prefab: {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
+      ratio: 1
+    radialWidth: 150
+    centricDensity: 0.025
+    radialDensity: 0.025
+  - spawns:
+    - prefab: {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
+      ratio: 1
+    radialWidth: 100
+    centricDensity: 0.05
+    radialDensity: 0.05
+  - spawns:
+    - prefab: {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
+      ratio: 1
+    radialWidth: 200
+    centricDensity: 0.0125
+    radialDensity: 0.0125

@@ -3,12 +3,13 @@ using Components;
 using ScriptableObjects;
 using UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CraftingStation : MonoBehaviour
 {
     [SerializeField] private InteractableTrigger interactableTrigger;
     [SerializeField] private CraftingUI craftingUI;
-    [SerializeField] private Recipe recipe;
+    [FormerlySerializedAs("recipe")] [SerializeField] private RecipeData recipeData;
 
     private Inventory _inventory;
 
@@ -20,7 +21,7 @@ public class CraftingStation : MonoBehaviour
     private void Start()
     {
         _inventory = GameManager.Instance.PlayerInventory;
-        craftingUI.SetRecipe(recipe);
+        craftingUI.SetRecipe(recipeData);
         craftingUI.UpdateSlots(_inventory);
         _inventory.OnItemAdded += OnItemAddedToInventory;
         _inventory.OnItemRemoved += OnItemRemovedFromInventory;
@@ -28,14 +29,14 @@ public class CraftingStation : MonoBehaviour
 
     private void TryCrafting()
     {
-        if (!recipe.CanCraft(_inventory)) return;
+        if (!recipeData.CanCraft(_inventory)) return;
 
-        foreach (var itemQuantity in recipe.ingredients)
+        foreach (var itemQuantity in recipeData.ingredients)
         {
             _inventory.RemoveItem(itemQuantity.itemData, itemQuantity.quantity);
         }
 
-        foreach (var itemQuantity in recipe.products)
+        foreach (var itemQuantity in recipeData.products)
         {
             _inventory.AddItem(itemQuantity.itemData, itemQuantity.quantity);
         }
