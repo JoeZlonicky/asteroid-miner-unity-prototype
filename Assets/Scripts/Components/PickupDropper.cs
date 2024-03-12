@@ -23,7 +23,7 @@ namespace Components
             {
                 var randomVector = Random.insideUnitCircle;
                 Vector3 offset = dropRadius * randomVector;
-                var pickup = Instantiate(pickupPrefab, transform.position + offset, Quaternion.identity);
+                var pickup = Instantiate(pickupPrefab, transform.position + offset, Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
                 pickup.GetComponent<Rigidbody2D>().AddForce(passiveDriftForce * randomVector.normalized);
             }
         }

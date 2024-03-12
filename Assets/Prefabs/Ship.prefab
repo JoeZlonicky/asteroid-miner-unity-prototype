@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceAcceleration: 10
-  correctionForce: 2
+  correctionForce: 10
 --- !u!58 &5162596247682361331
 CircleCollider2D:
   m_ObjectHideFlags: 0

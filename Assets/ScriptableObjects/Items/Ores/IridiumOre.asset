@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233da81af24573e4584f9f82bb1d5884, type: 3}
+  m_Name: IridiumOre
+  m_EditorClassIdentifier: 
+  displayName: Iridium Ore
+  icon: {fileID: 2800000, guid: 5b61eea1b5431dd4a8779efbb776bf04, type: 3}
+  pickupPrefab: {fileID: 7269326538038861289, guid: ea1dedc814e4d17439ea4d34761bf89b, type: 3}
