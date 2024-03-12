@@ -11,17 +11,12 @@ namespace ScriptableObjects
         [Serializable]
         public struct RingData
         {
-            public SpawnData[] spawns;
+            public GameObject[] spawns;
             [Min(0f)] public float radialWidth;
-            [Range(0f, 1f)]public float centricDensity;
+            [Range(0f, 1f)] public float centricDensity;
             [Range(0f, 1f)] public float radialDensity;
-        }
-
-        [Serializable]
-        public struct SpawnData
-        {
-            public GameObject prefab;
-            [Min(0f)] public float ratio;
+            [Min(0f)] public float centricRandomOffset;
+            [Min(0f)] public float radialRandomOffset;
         }
     }
 }

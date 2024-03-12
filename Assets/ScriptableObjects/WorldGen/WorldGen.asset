@@ -14,24 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rings:
   - spawns: []
-    radialWidth: 20
+    radialWidth: 40
     centricDensity: 0
     radialDensity: 0
+    centricRandomOffset: 0
+    radialRandomOffset: 0
   - spawns:
-    - prefab: {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
-      ratio: 1
+    - {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
     radialWidth: 150
     centricDensity: 0.025
     radialDensity: 0.025
+    centricRandomOffset: 24
+    radialRandomOffset: 24
   - spawns:
-    - prefab: {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
-      ratio: 1
+    - {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
     radialWidth: 100
     centricDensity: 0.05
     radialDensity: 0.05
+    centricRandomOffset: 8
+    radialRandomOffset: 8
   - spawns:
-    - prefab: {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
-      ratio: 1
+    - {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
     radialWidth: 200
     centricDensity: 0.0125
     radialDensity: 0.0125
+    centricRandomOffset: 32
+    radialRandomOffset: 32
