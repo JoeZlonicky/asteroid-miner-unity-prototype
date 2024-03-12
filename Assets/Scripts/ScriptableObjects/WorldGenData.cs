@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace ScriptableObjects
 {
@@ -13,9 +14,13 @@ namespace ScriptableObjects
         {
             public GameObject[] spawns;
             [Min(0f)] public float radialWidth;
-            [Range(0f, 1f)] public float centricDensity;
+            [Min(2)] public int nChunks;
+            public float rotationSpeedDegrees;
+            
+            [Range(0f, 1f)] public float circumferentialDensity;
             [Range(0f, 1f)] public float radialDensity;
-            [Min(0f)] public float centricRandomOffset;
+            
+            [Min(0f)] public float circumferentialRandomOffset;
             [Min(0f)] public float radialRandomOffset;
         }
     }

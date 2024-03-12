@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7222432065416953223}
   - component: {fileID: 7642484257317968656}
   - component: {fileID: 263603338650040672}
-  - component: {fileID: 1709625837779860760}
+  - component: {fileID: 8507562420179583190}
   - component: {fileID: 4978408597377017260}
   - component: {fileID: 3128826046329163197}
   - component: {fileID: 3373401362153748050}
@@ -152,7 +152,7 @@ PolygonCollider2D:
       - {x: -0.36221674, y: -2.2446485}
       - {x: 0.5105355, y: -1.7556269}
   m_UseDelaunayMesh: 0
---- !u!50 &1709625837779860760
+--- !u!50 &8507562420179583190
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8719901103991224529}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

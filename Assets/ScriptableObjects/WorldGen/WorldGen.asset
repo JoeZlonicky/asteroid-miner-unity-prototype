@@ -15,42 +15,54 @@ MonoBehaviour:
   rings:
   - spawns: []
     radialWidth: 20
-    centricDensity: 0
+    nChunks: 2
+    rotationSpeedDegrees: 0
+    circumferentialDensity: 0
     radialDensity: 0
-    centricRandomOffset: 0
+    circumferentialRandomOffset: 0
     radialRandomOffset: 0
   - spawns:
     - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     radialWidth: 50
-    centricDensity: 0.075
+    nChunks: 8
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.075
     radialDensity: 0.075
-    centricRandomOffset: 6
-    radialRandomOffset: 6
+    circumferentialRandomOffset: 4
+    radialRandomOffset: 4
   - spawns:
     - {fileID: 7541834559061142505, guid: 6566807bc35eeb146b0a2f196b23bc2d, type: 3}
     radialWidth: 50
-    centricDensity: 0.075
+    nChunks: 16
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.075
     radialDensity: 0.075
-    centricRandomOffset: 6
-    radialRandomOffset: 6
+    circumferentialRandomOffset: 4
+    radialRandomOffset: 4
   - spawns:
     - {fileID: 5270411535207081736, guid: aadcf27cfddd4fc4bab70adc6e2ae0fa, type: 3}
     radialWidth: 50
-    centricDensity: 0.075
+    nChunks: 32
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.075
     radialDensity: 0.075
-    centricRandomOffset: 6
-    radialRandomOffset: 6
+    circumferentialRandomOffset: 4
+    radialRandomOffset: 4
   - spawns:
     - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
     radialWidth: 50
-    centricDensity: 0.075
+    nChunks: 32
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.075
     radialDensity: 0.075
-    centricRandomOffset: 6
-    radialRandomOffset: 6
+    circumferentialRandomOffset: 4
+    radialRandomOffset: 4
   - spawns:
     - {fileID: 3804409271849131278, guid: 8d5fcc7c03fd712449dd31fadcb2048a, type: 3}
     radialWidth: 50
-    centricDensity: 0.075
+    nChunks: 32
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.075
     radialDensity: 0.075
-    centricRandomOffset: 6
-    radialRandomOffset: 6
+    circumferentialRandomOffset: 4
+    radialRandomOffset: 4

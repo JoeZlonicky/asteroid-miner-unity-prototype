@@ -74,7 +74,7 @@ Material:
     - _BGColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _PositionOffset: {r: -2.2732968, g: -1.1242822, b: -0.25, a: 0}
+    - _PositionOffset: {r: -0.055930257, g: -0.5390918, b: -0.25, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _StarColor: {r: 0.6431373, g: 0.8666667, b: 0.85882354, a: 0.61960787}
   m_BuildTextureStacks: []

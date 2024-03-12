@@ -15,6 +15,8 @@ public class Asteroid : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        animator.enabled = false;
+        
         pickupDropper = GetComponent<PickupDropper>();
         health = GetComponent<Health>();
         health.OnHit += OnHit;
@@ -23,6 +25,7 @@ public class Asteroid : MonoBehaviour
 
     private void OnHit(int amount)
     {
+        animator.enabled = true;
         animator.SetTrigger(Hit);
     }
 
