@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="608.71985"
+   height="632.93817"
+   viewBox="0 0 152.17997 158.23454"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="NitrogenDeposit.svg"
+   inkscape:export-filename="NitrogenDeposit.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.51717104"
+     inkscape:cx="225.26397"
+     inkscape:cy="430.22517"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-49.104308,-105.78043)">
+    <path
+       style="fill:#411d31;fill-opacity:1;stroke:#cf573c;stroke-width:3.175;stroke-dasharray:none;stroke-opacity:1"
+       d="m 55.711863,157.39002 30.920333,-1.19149 14.313584,-12.536 7.3632,-35.98401 23.23518,5.1352 13.44867,28.804 42.06534,-2.58251 12.27772,12.72087 -16.41947,30.4114 -0.23427,32.08875 15.42654,29.55009 -13.79794,1.6485 -32.15271,-13.07649 -6.38105,24.15306 -15.92532,5.58427 -14.99937,-21.76316 -38.285762,3.98533 -12.746155,-10.93651 16.655896,-20.22698 -0.02844,-16.01215 -29.551087,-17.1846 z"
+       id="path1"
+       sodipodi:nodetypes="cccccccccccccccccccccc"
+       inkscape:label="Base" />
+    <path
+       style="fill:#411d31;stroke:#cf573c;stroke-width:3.175;stroke-dasharray:none"
+       d="m 114.63277,170.44241 2.65065,-25.22068 12.83694,-7.57489 10.30884,24.04843"
+       id="path2"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="Edge" />
+    <path
+       style="fill:#411d31;stroke:#cf573c;stroke-width:3.175;stroke-dasharray:none"
+       d="m 104.4361,203.3302 -7.945439,22.16218 15.432619,4.71727 22.13932,-9.73432"
+       id="path3"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="Edge" />
+    <path
+       style="fill:#411d31;stroke:#cf573c;stroke-width:3.175;stroke-dasharray:none"
+       d="m 161.90499,193.90422 7.91391,17.29385 -5.16461,10.73561 -18.88729,-10.4528"
+       id="path4"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="Edge" />
+    <path
+       style="fill:#411d31;stroke:#cf573c;stroke-width:3.175;stroke-dasharray:none"
+       d="m 150.87545,164.53724 21.47213,-11.80143 1.66819,17.1422 -8.48081,12.3561"
+       id="path5"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="Edge" />
+    <path
+       style="fill:#411d31;stroke:#cf573c;stroke-width:3.175;stroke-dasharray:none"
+       d="m 102.56443,173.44801 -16.499303,-9.14877 -6.809282,20.03716 33.133995,9.43064"
+       id="path6"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="Edge" />
+  </g>
+</svg>

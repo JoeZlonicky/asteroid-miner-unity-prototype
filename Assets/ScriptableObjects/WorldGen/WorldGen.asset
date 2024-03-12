@@ -14,29 +14,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rings:
   - spawns: []
-    radialWidth: 40
+    radialWidth: 20
     centricDensity: 0
     radialDensity: 0
     centricRandomOffset: 0
     radialRandomOffset: 0
   - spawns:
-    - {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
-    radialWidth: 150
-    centricDensity: 0.025
-    radialDensity: 0.025
-    centricRandomOffset: 24
-    radialRandomOffset: 24
+    - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
+    radialWidth: 50
+    centricDensity: 0.075
+    radialDensity: 0.075
+    centricRandomOffset: 6
+    radialRandomOffset: 6
   - spawns:
-    - {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
-    radialWidth: 100
-    centricDensity: 0.05
-    radialDensity: 0.05
-    centricRandomOffset: 8
-    radialRandomOffset: 8
+    - {fileID: 7541834559061142505, guid: 6566807bc35eeb146b0a2f196b23bc2d, type: 3}
+    radialWidth: 50
+    centricDensity: 0.075
+    radialDensity: 0.075
+    centricRandomOffset: 6
+    radialRandomOffset: 6
   - spawns:
-    - {fileID: 8719901103991224529, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
-    radialWidth: 200
-    centricDensity: 0.0125
-    radialDensity: 0.0125
-    centricRandomOffset: 32
-    radialRandomOffset: 32
+    - {fileID: 5270411535207081736, guid: aadcf27cfddd4fc4bab70adc6e2ae0fa, type: 3}
+    radialWidth: 50
+    centricDensity: 0.075
+    radialDensity: 0.075
+    centricRandomOffset: 6
+    radialRandomOffset: 6
+  - spawns:
+    - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
+    radialWidth: 50
+    centricDensity: 0.075
+    radialDensity: 0.075
+    centricRandomOffset: 6
+    radialRandomOffset: 6
+  - spawns:
+    - {fileID: 3804409271849131278, guid: 8d5fcc7c03fd712449dd31fadcb2048a, type: 3}
+    radialWidth: 50
+    centricDensity: 0.075
+    radialDensity: 0.075
+    centricRandomOffset: 6
+    radialRandomOffset: 6
