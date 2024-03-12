@@ -39,6 +39,14 @@ MonoBehaviour:
     radialDensity: 0.075
     circumferentialRandomOffset: 4
     radialRandomOffset: 4
+  - spawns: []
+    radialWidth: 5
+    nChunks: 32
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.03
+    radialDensity: 0.075
+    circumferentialRandomOffset: 6
+    radialRandomOffset: 4
   - spawns:
     - {fileID: 5270411535207081736, guid: aadcf27cfddd4fc4bab70adc6e2ae0fa, type: 3}
     radialWidth: 50
@@ -48,21 +56,37 @@ MonoBehaviour:
     radialDensity: 0.075
     circumferentialRandomOffset: 4
     radialRandomOffset: 4
-  - spawns:
-    - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
-    radialWidth: 50
+  - spawns: []
+    radialWidth: 10
     nChunks: 32
     rotationSpeedDegrees: 1
-    circumferentialDensity: 0.075
+    circumferentialDensity: 0.03
     radialDensity: 0.075
+    circumferentialRandomOffset: 6
+    radialRandomOffset: 4
+  - spawns:
+    - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
+    radialWidth: 30
+    nChunks: 32
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.09
+    radialDensity: 0.09
     circumferentialRandomOffset: 4
+    radialRandomOffset: 3
+  - spawns: []
+    radialWidth: 20
+    nChunks: 32
+    rotationSpeedDegrees: 1
+    circumferentialDensity: 0.05
+    radialDensity: 0.075
+    circumferentialRandomOffset: 5
     radialRandomOffset: 4
   - spawns:
     - {fileID: 3804409271849131278, guid: 8d5fcc7c03fd712449dd31fadcb2048a, type: 3}
-    radialWidth: 50
+    radialWidth: 70
     nChunks: 32
     rotationSpeedDegrees: 1
-    circumferentialDensity: 0.075
+    circumferentialDensity: 0.03
     radialDensity: 0.075
-    circumferentialRandomOffset: 4
+    circumferentialRandomOffset: 6
     radialRandomOffset: 4

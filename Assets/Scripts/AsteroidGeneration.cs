@@ -4,7 +4,6 @@ using Components;
 using ScriptableObjects;
 using UnityEditor;
 using UnityEngine;
-using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
 
@@ -29,6 +28,10 @@ public class AsteroidGeneration : MonoBehaviour
             GenerateRing(ringData, startRadius);
             startRadius += ringData.radialWidth;
         }
+        
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(this);
+#endif
     }
 
     private void DestroyImmediateChildren()
