@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d189e3d44357bbd4eb4bc57d4f598493, type: 3}
-  m_Name: IronPlate
+  m_Name: PalladiumCatalyst
   m_EditorClassIdentifier: 
   ingredients:
-  - itemData: {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
+  - itemData: {fileID: 11400000, guid: 5cdfc91c69bf1354aa3f7baff970f3df, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: dd2620291e9319944bcde3a202824c76, type: 2}
     quantity: 1
   products:
-  - itemData: {fileID: 11400000, guid: 67b5838adb769f4438a1bfd41a8f781a, type: 2}
+  - itemData: {fileID: 11400000, guid: 2187b05339587264dbb2502b94468d13, type: 2}
     quantity: 1

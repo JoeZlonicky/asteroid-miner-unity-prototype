@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="64.123329"
-   height="62.639042"
-   viewBox="0 0 16.965964 16.573246"
+   width="63.999996"
+   height="64.287636"
+   viewBox="0 0 15.999999 16.071909"
    version="1.1"
    id="svg1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
@@ -18,7 +18,7 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="5.8511223"
-     inkscape:cx="36.659634"
-     inkscape:cy="46.230447"
+     inkscape:zoom="4.1373683"
+     inkscape:cx="11.722428"
+     inkscape:cy="36.375781"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2"
      showgrid="false" />
   <defs
      id="defs1" />
@@ -42,11 +42,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-0.34530849,-0.0903098)">
+     transform="translate(-0.3453085,-0.0903098)"
+     style="display:inline">
     <path
-       style="fill:#c7cfcc;stroke:#ebede9;stroke-width:1.5875;stroke-dasharray:none"
-       d="M 1.1463478,1.5066202 1.2073712,12.340899 9.0332656,15.801821 16.516332,12.778178 16.491054,1.400757 8.8687636,5.3943501 Z"
+       style="fill:#c7cfcc;stroke:#ebede9;stroke-width:1.5;stroke-dasharray:none"
+       d="M 1.0953085,0.8403098 V 12.09031 l 7.25,3.25 7.2499995,-3.25 V 0.8403098 h -4.25 l -2.9999995,3.25 -3,-3.25 z"
        id="path1"
-       sodipodi:nodetypes="ccccccc" />
+       sodipodi:nodetypes="ccccccccc" />
+  </g>
+  <g
+     inkscape:label="Layer 1 copy"
+     inkscape:groupmode="layer"
+     id="g2"
+     transform="translate(-0.3453085,-0.0903098)"
+     style="display:none">
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.0953085,0.8403098 V 12.09031 l 7.25,3.25 7.2499995,-3.25 V 0.8403098 h -4.25 l -2.9999995,3.25 -3,-3.25 z"
+       id="path2"
+       sodipodi:nodetypes="ccccccccc" />
   </g>
 </svg>
