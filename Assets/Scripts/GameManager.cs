@@ -1,5 +1,7 @@
 using Components;
+using UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Inventory))]
 public class GameManager : MonoBehaviour
