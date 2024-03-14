@@ -11,7 +11,7 @@ namespace Components
         public event HitAction OnHit;
         
         [field: SerializeField] public int MaxHealth { get; private set; } = 10;
-        
+        [field: SerializeField] public bool Undying { get; set; }
         private int CurrentHealth { get; set; }
 
         private void Awake()
@@ -21,7 +21,7 @@ namespace Components
 
         public int DealDamage(int amount)
         {
-            if (CurrentHealth == 0 || amount == 0) return 0;
+            if (amount == 0) return 0;
             Debug.Assert(amount > 0);
 
             var before = CurrentHealth;
@@ -30,7 +30,7 @@ namespace Components
             var change = before - CurrentHealth;
 
             OnHit?.Invoke(change);
-            if (CurrentHealth == 0) OnDeath?.Invoke();
+            if (CurrentHealth == 0 && !Undying) OnDeath?.Invoke();
         
             return change;
         }

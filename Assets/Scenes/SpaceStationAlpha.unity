@@ -376,7 +376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Board
+  m_text: Board (E)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c2b069da03672d24e89d5d7fee59ac66, type: 2}
   m_sharedMaterial: {fileID: 3382025136303547910, guid: c2b069da03672d24e89d5d7fee59ac66, type: 2}
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -92.396774, y: 0, z: -99.69121, w: 0}
+  m_margin: {x: -151.34886, y: 0, z: -99.69121, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Board
+  m_text: Board (E)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c2b069da03672d24e89d5d7fee59ac66, type: 2}
   m_sharedMaterial: {fileID: 3382025136303547910, guid: c2b069da03672d24e89d5d7fee59ac66, type: 2}
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -92.396774, y: 0, z: -99.69121, w: 0}
+  m_margin: {x: -92.396774, y: 0, z: -157.4875, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

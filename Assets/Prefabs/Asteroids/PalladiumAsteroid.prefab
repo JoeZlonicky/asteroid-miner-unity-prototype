@@ -220,6 +220,10 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].y
       value: -1.7556269
       objectReference: {fileID: 0}
+    - target: {fileID: 3128826046329163197, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
+      propertyPath: requiredShipTierToBreak
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6893458706808561517, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
       propertyPath: itemData
       value: 

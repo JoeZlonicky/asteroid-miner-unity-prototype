@@ -29,7 +29,11 @@ public class CraftingStation : MonoBehaviour
 
     private void TryCrafting()
     {
-        if (!recipeData.CanCraft(_inventory)) return;
+        if (!recipeData.CanCraft(_inventory))
+        {
+            GameManager.Instance.TriggerNotification("Unable to craft");
+            return;
+        };
 
         foreach (var itemQuantity in recipeData.ingredients)
         {
@@ -39,6 +43,16 @@ public class CraftingStation : MonoBehaviour
         foreach (var itemQuantity in recipeData.products)
         {
             _inventory.AddItem(itemQuantity.itemData, itemQuantity.quantity);
+        }
+
+        if (recipeData.customCraftNotificationMessage is { Length: > 0 })
+        {
+            GameManager.Instance.TriggerNotification(recipeData.customCraftNotificationMessage);
+            return;
+        }
+        foreach (var itemQuantity in recipeData.products)
+        {
+            GameManager.Instance.TriggerNotification($"Crafted {itemQuantity.quantity} {itemQuantity.itemData.displayName}");
         }
     }
 

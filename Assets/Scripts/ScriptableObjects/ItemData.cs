@@ -9,6 +9,5 @@ namespace ScriptableObjects
         public Texture2D icon;
         public GameObject pickupPrefab;
         public bool hideInInventory;
-        public string customNotificationMessage;
     }
 }

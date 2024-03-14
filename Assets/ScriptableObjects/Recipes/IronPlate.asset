@@ -18,3 +18,4 @@ MonoBehaviour:
   products:
   - itemData: {fileID: 11400000, guid: 67b5838adb769f4438a1bfd41a8f781a, type: 2}
     quantity: 1
+  customCraftNotificationMessage: Repaired ship durability

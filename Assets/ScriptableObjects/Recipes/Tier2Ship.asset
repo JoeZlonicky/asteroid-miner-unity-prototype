@@ -20,3 +20,4 @@ MonoBehaviour:
   products:
   - itemData: {fileID: 11400000, guid: 1c0bf324fa2bc7842a148a9df1f649af, type: 2}
     quantity: 1
+  customCraftNotificationMessage: Ship upgraded to tier II

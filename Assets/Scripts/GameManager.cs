@@ -1,14 +1,17 @@
 using Components;
-using UI;
 using UnityEngine;
-using UnityEngine.Serialization;
+
+public delegate void NotificationAction(string text);
 
 [RequireComponent(typeof(Inventory))]
 public class GameManager : MonoBehaviour
 {
+    public event NotificationAction OnNotification;
+    
     public static GameManager Instance { get; private set; }
     
     public Inventory PlayerInventory { get; private set; }
+    public int ShipTier { get; private set; }
 
     private void Awake()
     {
@@ -22,5 +25,15 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         
         PlayerInventory = GetComponent<Inventory>();
+    }
+
+    public void TriggerNotification(string text)
+    {
+        OnNotification?.Invoke(text);
+    }
+
+    public void UpgradeShipTier()
+    {
+        ShipTier += 1;
     }
 }

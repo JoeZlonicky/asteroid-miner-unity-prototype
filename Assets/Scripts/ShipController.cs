@@ -35,6 +35,7 @@ public class ShipController : MonoBehaviour
         {
             case > 0f:
                 ApplyForwardForce();
+                ApplyPassiveDrag();
                 break;
             case < 0f:
                 ApplyActiveDrag();
