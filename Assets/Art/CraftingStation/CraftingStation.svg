@@ -34,7 +34,8 @@
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showgrid="false" />
   <defs
      id="defs1" />
   <g
@@ -44,7 +45,7 @@
      transform="translate(4.1689815,-17.147296)">
     <path
        sodipodi:type="star"
-       style="fill:#10141f;stroke:#be772b;stroke-width:3.50756;stroke-dasharray:none"
+       style="fill:#10141f;stroke:#be772b;stroke-width:3.50756009;stroke-dasharray:none"
        id="path1"
        inkscape:flatsided="true"
        sodipodi:sides="6"

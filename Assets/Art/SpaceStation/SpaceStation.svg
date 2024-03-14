@@ -3,8 +3,8 @@
 
 <svg
    width="2102.5647"
-   height="1578.1508"
-   viewBox="0 0 525.64117 394.53768"
+   height="1184.6052"
+   viewBox="0 0 525.64117 296.1513"
    version="1.1"
    id="svg1"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="0.25858552"
-     inkscape:cx="848.84877"
-     inkscape:cy="744.43457"
+     inkscape:zoom="0.18284757"
+     inkscape:cx="177.74368"
+     inkscape:cy="1583.286"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -195,7 +195,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="matrix(2.5346507,0,0,2.3583951,-61.592658,-217.3619)">
+     transform="matrix(2.5346507,0,0,2.3583951,-61.592663,-217.3619)">
     <path
        style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect5"
@@ -218,7 +218,7 @@
        sodipodi:type="rect"
        d="m 159.3135,135.30661 h 68.17132 l 3.175,3.175 v 9.56717 l -3.175,3.175 H 159.3135 l -3.175,-3.175 v -9.56717 z" />
     <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
+       style="fill:#172038;stroke:#4f8fba;stroke-width:2.18797;stroke-dasharray:none"
        id="rect2"
        width="35.451889"
        height="81.756393"
@@ -227,7 +227,7 @@
        inkscape:path-effect="#path-effect7"
        sodipodi:type="rect"
        d="m 140.94117,179.28012 h 29.10189 l 3.175,3.175 v 75.40639 l -3.175,3.175 h -29.10189 l -3.175,-3.175 v -75.40639 z"
-       transform="translate(0,-2.6031127)" />
+       transform="matrix(1,0,0,0.87362097,0,-11.264291)" />
     <path
        style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
        id="rect1"
@@ -247,17 +247,8 @@
        y="198.45308"
        inkscape:path-effect="#path-effect8"
        sodipodi:type="rect"
-       d="m 121.04472,198.45308 h 70.34184 l 3.175,3.175 v 5.58788 l -3.175,3.175 h -70.34184 l -3.175,-3.175 0,-5.58788 z" />
-    <path
-       style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-dasharray:none"
-       id="rect3-7"
-       width="76.691841"
-       height="11.937881"
-       x="118.11891"
-       y="226.97507"
-       inkscape:path-effect="#path-effect9"
-       sodipodi:type="rect"
-       d="m 121.29391,226.97507 h 70.34184 l 3.175,3.175 v 5.58788 l -3.175,3.175 h -70.34184 l -3.175,-3.175 v -5.58788 z" />
+       d="m 121.04472,198.45308 h 70.34184 l 3.175,3.175 v 5.58788 l -3.175,3.175 h -70.34184 l -3.175,-3.175 0,-5.58788 z"
+       transform="translate(0,-6.7842751)" />
     <path
        style="fill:#172038;stroke:#4f8fba;stroke-width:2.04504;stroke-linejoin:miter;stroke-dasharray:none;paint-order:normal"
        id="rect4"

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d189e3d44357bbd4eb4bc57d4f598493, type: 3}
+  m_Name: Tier2Ship
+  m_EditorClassIdentifier: 
+  ingredients:
+  - itemData: {fileID: 11400000, guid: 64c68884354e052489947782e1bc209e, type: 2}
+    quantity: 1
+  - itemData: {fileID: 11400000, guid: bb4b1c6b34993634a828badd91e7dc83, type: 2}
+    quantity: 1
+  products:
+  - itemData: {fileID: 11400000, guid: 1c0bf324fa2bc7842a148a9df1f649af, type: 2}
+    quantity: 1
