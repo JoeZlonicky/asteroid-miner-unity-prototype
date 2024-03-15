@@ -8,7 +8,6 @@ namespace UI
     public class NotificationDisplay : MonoBehaviour
     {
         [SerializeField] private GameObject notificationTextPrefab;
-        [SerializeField] private float displayTime = 2.0f;
 
         private void Start()
         {

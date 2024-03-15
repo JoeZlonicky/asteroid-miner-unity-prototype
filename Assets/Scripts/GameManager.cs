@@ -1,12 +1,16 @@
+using System.Linq;
 using Components;
+using ScriptableObjects;
 using UnityEngine;
 
 public delegate void NotificationAction(string text);
+public delegate void ShipTierUpAction(int newTier);
 
 [RequireComponent(typeof(Inventory))]
 public class GameManager : MonoBehaviour
 {
     public event NotificationAction OnNotification;
+    public event ShipTierUpAction OnShipTierUp;
     
     public static GameManager Instance { get; private set; }
     
@@ -35,5 +39,6 @@ public class GameManager : MonoBehaviour
     public void UpgradeShipTier()
     {
         ShipTier += 1;
+        OnShipTierUp?.Invoke(ShipTier);
     }
 }

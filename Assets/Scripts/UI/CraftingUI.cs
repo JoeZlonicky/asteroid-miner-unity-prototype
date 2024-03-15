@@ -39,7 +39,7 @@ namespace UI
 
         public void UpdateSlots(Inventory inventory)
         {
-            Debug.Assert(_recipeData != null);
+            
         }
     }
 }

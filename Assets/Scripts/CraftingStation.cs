@@ -1,67 +1,36 @@
-using System;
-using Components;
+﻿using Components;
 using ScriptableObjects;
 using UI;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class CraftingStation : MonoBehaviour
+public abstract class CraftingStation : MonoBehaviour
 {
-    [SerializeField] private InteractableTrigger interactableTrigger;
-    [SerializeField] private CraftingUI craftingUI;
-    [FormerlySerializedAs("recipe")] [SerializeField] private RecipeData recipeData;
-
-    private Inventory _inventory;
-
-    private void Awake()
+    [SerializeField] protected InteractableTrigger interactableTrigger;
+    [SerializeField] protected CraftingUI craftingUI;
+    
+    protected Inventory _inventory;
+    protected RecipeData _recipeData;
+    
+    protected virtual void Awake()
     {
         interactableTrigger.OnInteract += TryCrafting;
     }
     
-    private void Start()
+    protected virtual void Start()
     {
         _inventory = GameManager.Instance.PlayerInventory;
-        craftingUI.SetRecipe(recipeData);
-        craftingUI.UpdateSlots(_inventory);
         _inventory.OnItemAdded += OnItemAddedToInventory;
         _inventory.OnItemRemoved += OnItemRemovedFromInventory;
     }
-
-    private void TryCrafting()
-    {
-        if (!recipeData.CanCraft(_inventory))
-        {
-            GameManager.Instance.TriggerNotification("Unable to craft");
-            return;
-        };
-
-        foreach (var itemQuantity in recipeData.ingredients)
-        {
-            _inventory.RemoveItem(itemQuantity.itemData, itemQuantity.quantity);
-        }
-
-        foreach (var itemQuantity in recipeData.products)
-        {
-            _inventory.AddItem(itemQuantity.itemData, itemQuantity.quantity);
-        }
-
-        if (recipeData.customCraftNotificationMessage is { Length: > 0 })
-        {
-            GameManager.Instance.TriggerNotification(recipeData.customCraftNotificationMessage);
-            return;
-        }
-        foreach (var itemQuantity in recipeData.products)
-        {
-            GameManager.Instance.TriggerNotification($"Crafted {itemQuantity.quantity} {itemQuantity.itemData.displayName}");
-        }
-    }
-
+    
     private void OnDestroy()
     {
         if (_inventory == null) return;
         _inventory.OnItemAdded -= OnItemAddedToInventory;
         _inventory.OnItemRemoved -= OnItemRemovedFromInventory;
     }
+    
+    protected abstract void TryCrafting();
     
     private void OnItemAddedToInventory(ItemData itemData, int n, bool isNew)
     {

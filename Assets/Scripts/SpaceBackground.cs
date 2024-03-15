@@ -22,7 +22,7 @@ public class SpaceBackground : MonoBehaviour
     }
     
     [Serializable]
-    private struct Layer
+    private class Layer
     {
         public RawImage starImage;
         public float parallaxStrength;

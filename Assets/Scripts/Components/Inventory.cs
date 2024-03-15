@@ -22,7 +22,7 @@ namespace Components
         public void AddItem(ItemData itemData, int n = 1)
         {
             var isNew = !_items.ContainsKey(itemData);
-            _items[itemData] = _items.GetValueOrDefault(itemData, 0) + 1;
+            _items[itemData] = _items.GetValueOrDefault(itemData, 0) + n;
             OnItemAdded?.Invoke(itemData, n, isNew);
         }
 
