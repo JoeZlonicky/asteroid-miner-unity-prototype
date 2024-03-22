@@ -48,11 +48,6 @@ public class AsteroidGeneration : MonoBehaviour
         if (ringData.spawns.Length == 0) return;
 
         var ring = new GameObject("Ring");
-        if (ringData.rotationSpeedDegrees != 0f)
-        {
-            var rotateOverTime = ring.AddComponent<RotateOverTime>();
-            rotateOverTime.rotationSpeedDegrees = ringData.rotationSpeedDegrees;
-        }
         ring.transform.SetParent(transform);
 
         var chunks = CreateChunks(ringData, startRadius);
@@ -94,7 +89,7 @@ public class AsteroidGeneration : MonoBehaviour
         }
     }
 
-    private List<GameObject> CreateChunks(WorldGenData.RingData ringData, float startRadius)
+    private static List<GameObject> CreateChunks(WorldGenData.RingData ringData, float startRadius)
     {
         var chunks = new List<GameObject>();
         var chunkAngleSpan = 2f * Mathf.PI / ringData.nChunks;
@@ -102,8 +97,10 @@ public class AsteroidGeneration : MonoBehaviour
         
         for (var i = 0; i < ringData.nChunks; ++i)
         {
-            var chunk = new GameObject("Chunk");
-            chunk.layer = LayerMask.NameToLayer("Chunk");
+            var chunk = new GameObject("Chunk")
+            {
+                layer = LayerMask.NameToLayer("Chunk")
+            };
             var polyCollider = chunk.AddComponent<PolygonCollider2D>();
             polyCollider.isTrigger = true;
             

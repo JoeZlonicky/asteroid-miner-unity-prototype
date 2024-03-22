@@ -13,9 +13,10 @@ namespace ScriptableObjects
         public struct RingData
         {
             public GameObject[] spawns;
+            public Color backgroundTint;
+            public Color starTint;
             [Min(0f)] public float radialWidth;
             [Min(2)] public int nChunks;
-            public float rotationSpeedDegrees;
             
             [Range(0f, 1f)] public float circumferentialDensity;
             [Range(0f, 1f)] public float radialDensity;

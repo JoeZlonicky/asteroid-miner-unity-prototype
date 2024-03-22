@@ -71,10 +71,10 @@ Material:
     - _StarSize: 3
     - _StarTwinkleSpeed: 4
     m_Colors:
-    - _BGColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BGColor: {r: 0.0627451, g: 0.078431375, b: 0.12156863, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _PositionOffset: {r: 0.13363759, g: -0.16097061, b: -0.25, a: 0}
+    - _PositionOffset: {r: -0.5788812, g: -1.4881984, b: -0.25, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _StarColor: {r: 0.6431373, g: 0.8666667, b: 0.85882354, a: 0.61960787}
   m_BuildTextureStacks: []
