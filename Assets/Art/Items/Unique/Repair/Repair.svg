@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="83.961975"
+   height="82.165329"
+   viewBox="0 0 20.990494 20.541332"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="Repair.svg"
+   inkscape:export-filename="Repair.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="5.8511223"
+     inkscape:cx="14.270766"
+     inkscape:cy="31.703319"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.03152254,0.66279576)">
+    <path
+       style="fill:none;stroke:#ebede9;stroke-width:1.5;stroke-linecap:square;stroke-dasharray:none"
+       d="M 0.81573595,19.094264 0.78552346,16.677268 7.91566,9.8190437 7.0525345,4.515426 12.170062,0.14373144 l 3.465322,0.68881314 -5.077838,4.74979482 0.594771,3.4166741 3.88667,0.6551963 4.884048,-4.3911719 0.319822,3.4851667 -4.228483,4.1961244 -5.772356,-0.95732 -7.099924,7.137467 z"
+       id="path1"
+       sodipodi:nodetypes="ccccccccccccccc" />
+  </g>
+</svg>

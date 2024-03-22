@@ -5,17 +5,20 @@ using UnityEngine;
 
 public delegate void NotificationAction(string text);
 public delegate void ShipTierUpAction(int newTier);
+public delegate void WarpGateRepairedAction();
 
 [RequireComponent(typeof(Inventory))]
 public class GameManager : MonoBehaviour
 {
     public event NotificationAction OnNotification;
     public event ShipTierUpAction OnShipTierUp;
+    public event WarpGateRepairedAction OnWarpGateRepaired;
     
     public static GameManager Instance { get; private set; }
     
     public Inventory PlayerInventory { get; private set; }
     public int ShipTier { get; private set; }
+    public bool IsWarpGateRepaired { get; private set; }
 
     private void Awake()
     {
@@ -40,5 +43,11 @@ public class GameManager : MonoBehaviour
     {
         ShipTier += 1;
         OnShipTierUp?.Invoke(ShipTier);
+    }
+
+    public void SetWarpGateRepaired()
+    {
+        IsWarpGateRepaired = true;
+        OnWarpGateRepaired?.Invoke();
     }
 }
