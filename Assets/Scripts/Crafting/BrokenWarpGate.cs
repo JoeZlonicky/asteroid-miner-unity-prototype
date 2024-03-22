@@ -10,6 +10,12 @@ namespace Crafting
     
         protected override void Start()
         {
+            if (GameManager.Instance.IsWarpGateRepaired)
+            {
+                Repair();
+                return;
+            }
+            
             base.Start();
             _recipeData = recipeData;
             craftingUI.SetRecipe(_recipeData);
@@ -29,12 +35,17 @@ namespace Crafting
                 _inventory.RemoveItem(itemQuantity.itemData, itemQuantity.quantity);
             }
 
-            var t = transform;
-            Instantiate(repairedPrefab, t.position, t.rotation);
-            Destroy(gameObject);
+            Repair();
             
             GameManager.Instance.SetWarpGateRepaired();
             GameManager.Instance.TriggerNotification($"Repaired warp gate");
+        }
+
+        private void Repair()
+        {
+            var t = transform;
+            Instantiate(repairedPrefab, t.position, t.rotation);
+            Destroy(gameObject);
         }
     }
 }
