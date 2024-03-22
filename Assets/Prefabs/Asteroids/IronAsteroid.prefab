@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IronAsteroid
       objectReference: {fileID: 0}
+    - target: {fileID: 9192023257594460970, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

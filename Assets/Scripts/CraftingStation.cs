@@ -23,7 +23,7 @@ public abstract class CraftingStation : MonoBehaviour
         _inventory.OnItemRemoved += OnItemRemovedFromInventory;
     }
     
-    private void OnDestroy()
+    protected virtual void OnDestroy()
     {
         if (_inventory == null) return;
         _inventory.OnItemAdded -= OnItemAddedToInventory;

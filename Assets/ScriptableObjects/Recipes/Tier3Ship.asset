@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Tier3Ship
   m_EditorClassIdentifier: 
   ingredients:
-  - itemData: {fileID: 11400000, guid: fd100969c68834745a10f6838421e01f, type: 2}
+  - itemData: {fileID: 11400000, guid: 2187b05339587264dbb2502b94468d13, type: 2}
     quantity: 1
-  - itemData: {fileID: 11400000, guid: dd2620291e9319944bcde3a202824c76, type: 2}
+  - itemData: {fileID: 11400000, guid: bb420f3eb0e666a4ea371a5854e73b3e, type: 2}
     quantity: 1
   products:
   - itemData: {fileID: 11400000, guid: 536a539527c0c9644ace5f7d62541a90, type: 2}

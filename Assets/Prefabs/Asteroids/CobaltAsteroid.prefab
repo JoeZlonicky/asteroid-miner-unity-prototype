@@ -260,6 +260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CobaltAsteroid
       objectReference: {fileID: 0}
+    - target: {fileID: 9192023257594460970, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: e2650451aa319f842afc6cbcd2db899e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

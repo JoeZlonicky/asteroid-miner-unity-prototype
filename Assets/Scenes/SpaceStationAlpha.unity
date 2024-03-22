@@ -1562,6 +1562,9 @@ MonoBehaviour:
   addItemsToInventory:
   - {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
   - {fileID: 11400000, guid: 4d42c03f97ac2ab429b54234ae9a3150, type: 2}
+  - {fileID: 11400000, guid: bb4b1c6b34993634a828badd91e7dc83, type: 2}
+  - {fileID: 11400000, guid: dd2620291e9319944bcde3a202824c76, type: 2}
+  - {fileID: 11400000, guid: fac7c9350431cf44689f90d488ed7e84, type: 2}
 --- !u!114 &1045488779
 MonoBehaviour:
   m_ObjectHideFlags: 0

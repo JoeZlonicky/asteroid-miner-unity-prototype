@@ -44,9 +44,13 @@
      id="layer1"
      transform="translate(-98.2158,-137.86233)">
     <path
-       style="fill:#151d28;stroke:#c7cfcc;stroke-width:1.5;stroke-dasharray:none"
+       style="fill:#402751;stroke:#c65197;stroke-width:1.5;stroke-dasharray:none"
        d="m 102.52598,138.70083 -2.43543,3.31133 2.00816,3.01224 -3.054967,3.07634 0.867642,3.56799 3.930645,0.34224 2.11293,-3.26953 3.45004,0.98292 2.22179,-2.11497 -0.4059,-4.6786 -4.65722,0.14955 -0.87591,-3.67451 z"
        id="path3"
        sodipodi:nodetypes="ccccccccccccc" />
+    <path
+       style="fill:#402751;stroke:#c65197;stroke-width:1.5;stroke-linecap:square"
+       d="m 105.77845,140.46867 4.35814,-1.23908 -0.0854,3.71723 -3.63179,0.72636 z"
+       id="path1" />
   </g>
 </svg>

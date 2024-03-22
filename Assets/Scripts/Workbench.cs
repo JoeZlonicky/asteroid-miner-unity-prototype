@@ -29,6 +29,11 @@ public class Workbench : CraftingStation
         GameManager.Instance.OnShipTierUp += OnShipTierUp;
     }
 
+    protected override void OnDestroy()
+    {
+        GameManager.Instance.OnShipTierUp -= OnShipTierUp;
+    }
+
     protected override void TryCrafting()
     {
         if (!_recipeData.CanCraft(_inventory))

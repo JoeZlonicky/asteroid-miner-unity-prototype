@@ -240,6 +240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NitrogenAsteroid
       objectReference: {fileID: 0}
+    - target: {fileID: 9192023257594460970, guid: cad34c55d0bc4c345b8efaf1079300e8, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 05d57635ffa735540bf2b3fe18d4c572, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
