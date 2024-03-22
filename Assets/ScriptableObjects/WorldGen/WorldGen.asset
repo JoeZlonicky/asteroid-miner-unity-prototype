@@ -34,8 +34,10 @@ MonoBehaviour:
     radialRandomOffset: 4
   - spawns:
     - {fileID: 7541834559061142505, guid: 6566807bc35eeb146b0a2f196b23bc2d, type: 3}
+    - {fileID: 7541834559061142505, guid: 6566807bc35eeb146b0a2f196b23bc2d, type: 3}
+    - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     backgroundTint: {r: 0.12156863, g: 0.0627451, b: 0.068605684, a: 0}
-    starTint: {r: 1, g: 0.41037738, b: 0.45175454, a: 0}
+    starTint: {r: 1, g: 0.1273585, b: 0.18553454, a: 0}
     radialWidth: 50
     nChunks: 16
     circumferentialDensity: 0.075
@@ -44,7 +46,7 @@ MonoBehaviour:
     radialRandomOffset: 4
   - spawns: []
     backgroundTint: {r: 0.12156863, g: 0.0627451, b: 0.06666667, a: 0}
-    starTint: {r: 1, g: 0.4117647, b: 0.4509804, a: 0}
+    starTint: {r: 1, g: 0.1254902, b: 0.18431373, a: 0}
     radialWidth: 5
     nChunks: 32
     circumferentialDensity: 0.03
@@ -53,6 +55,10 @@ MonoBehaviour:
     radialRandomOffset: 4
   - spawns:
     - {fileID: 5270411535207081736, guid: aadcf27cfddd4fc4bab70adc6e2ae0fa, type: 3}
+    - {fileID: 5270411535207081736, guid: aadcf27cfddd4fc4bab70adc6e2ae0fa, type: 3}
+    - {fileID: 5270411535207081736, guid: aadcf27cfddd4fc4bab70adc6e2ae0fa, type: 3}
+    - {fileID: 7541834559061142505, guid: 6566807bc35eeb146b0a2f196b23bc2d, type: 3}
+    - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     backgroundTint: {r: 0.049661785, g: 0.08673011, b: 0.11320752, a: 0}
     starTint: {r: 0.20990565, g: 0.54238355, b: 0.8396226, a: 0}
     radialWidth: 50
@@ -72,6 +78,11 @@ MonoBehaviour:
     radialRandomOffset: 4
   - spawns:
     - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
+    - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
+    - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
+    - {fileID: 5270411535207081736, guid: aadcf27cfddd4fc4bab70adc6e2ae0fa, type: 3}
+    - {fileID: 7541834559061142505, guid: 6566807bc35eeb146b0a2f196b23bc2d, type: 3}
+    - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     backgroundTint: {r: 0.102742985, g: 0.0627451, b: 0.12156863, a: 0}
     starTint: {r: 0.84431815, g: 0.35154858, b: 0.9433962, a: 0}
     radialWidth: 30
@@ -91,6 +102,8 @@ MonoBehaviour:
     radialRandomOffset: 3.5
   - spawns:
     - {fileID: 3804409271849131278, guid: 8d5fcc7c03fd712449dd31fadcb2048a, type: 3}
+    - {fileID: 3804409271849131278, guid: 8d5fcc7c03fd712449dd31fadcb2048a, type: 3}
+    - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
     backgroundTint: {r: 0.065681726, g: 0.11320752, b: 0.065681726, a: 0}
     starTint: {r: 0.5023352, g: 0.9811321, b: 0.48593804, a: 0}
     radialWidth: 70

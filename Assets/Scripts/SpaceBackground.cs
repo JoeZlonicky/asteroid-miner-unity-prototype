@@ -7,55 +7,27 @@ public class SpaceBackground : MonoBehaviour
 {
     [SerializeField] private Camera currentCamera;
     [SerializeField] private RingPositionCalculator ringPositionCalculator;
-    [SerializeField] private float colorTransitionTimeSeconds = 1f;
+    [SerializeField] private float bgTintTransitionSpeed = 0.05f;
+    [SerializeField] private float starTintTransitionSpeed = 0.5f;
     [SerializeField] private Layer[] layers;
-    
-    private int _currentRingIndex = -1;
-    private float _colorTransitionProgress;
-    
-    private Color _bgColorStart;
-    private Color _bgColorGoal;
-    
-    private Color _starColorStart;
-    private Color _starColorGoal;
 
     private void Start()
     {
-        _bgColorStart = ringPositionCalculator.CurrentRing.backgroundTint;
-        _bgColorGoal = _bgColorStart;
-        _starColorStart = ringPositionCalculator.CurrentRing.starTint;
-        _starColorGoal = _starColorStart;
+        foreach (var layer in layers)
+        {
+            layer.starImage.material = Instantiate(layer.starImage.material);
+        }
     }
 
     private void Update()
     {
-        if (_currentRingIndex != ringPositionCalculator.CurrentRingIndex)
-        {
-            _currentRingIndex = ringPositionCalculator.CurrentRingIndex;
-            UpdateColorGoal();
-        }
-
-        _colorTransitionProgress += Time.deltaTime;
-        var currentBgColor = Color.Lerp(_bgColorStart, _bgColorGoal, _colorTransitionProgress / colorTransitionTimeSeconds);
-        var currentStarColor = Color.Lerp(_starColorStart, _starColorGoal, _colorTransitionProgress / colorTransitionTimeSeconds);
-        
+        var currentRingData = ringPositionCalculator.CurrentRing;
         foreach (var layer in layers)
         {
-            layer.UpdateTint(currentBgColor, currentStarColor);
+            layer.UpdateBgTint(currentRingData.backgroundTint, bgTintTransitionSpeed * Time.deltaTime);
+            layer.UpdateStarTint(currentRingData.starTint, starTintTransitionSpeed * Time.deltaTime);
             layer.UpdateOffset(currentCamera.transform.position);
         }
-    }
-
-    private void UpdateColorGoal()
-    {
-        var t = _colorTransitionProgress / colorTransitionTimeSeconds;
-        _bgColorStart = Color.Lerp(_bgColorStart, _bgColorGoal, t);
-        _starColorStart = Color.Lerp(_starColorStart, _starColorGoal, t);
-        
-        var newRing = ringPositionCalculator.CurrentRing;
-        _colorTransitionProgress = 0f;
-        _bgColorGoal = newRing.backgroundTint;
-        _starColorGoal = newRing.starTint;
     }
     
     [Serializable]
@@ -73,13 +45,23 @@ public class SpaceBackground : MonoBehaviour
             starImage.material.SetVector(PositionOffset, offset * parallaxStrength);
         }
 
-        public void UpdateTint(Color bgColor, Color starColor)
+        public void UpdateBgTint(Color color, float maxDelta)
         {
-            var backgroundAlpha = starImage.material.GetColor(BgColor).a;
-            var starAlpha = starImage.material.GetColor(StarColor).a;
+            UpdateTint(BgColor, color, maxDelta);
+        }
+
+        public void UpdateStarTint(Color color, float maxDelta)
+        {
+            UpdateTint(StarColor, color, maxDelta);
+        }
+
+        private void UpdateTint(int colorParameterID, Color color, float maxDelta)
+        {
+            var currentColor = starImage.material.GetColor(colorParameterID);
+            var goalColor = new Color(color.r, color.g, color.b, currentColor.a);
+            var newColor = Vector4.MoveTowards(currentColor, goalColor, maxDelta);
             
-            starImage.material.SetColor(BgColor, new Color(bgColor.r, bgColor.g, bgColor.b, backgroundAlpha));
-            starImage.material.SetColor(StarColor, new Color(starColor.r, starColor.g, starColor.b, starAlpha));
+            starImage.material.SetColor(colorParameterID, newColor);
         }
     }
 }
