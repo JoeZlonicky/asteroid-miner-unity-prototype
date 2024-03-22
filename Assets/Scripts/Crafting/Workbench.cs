@@ -40,7 +40,7 @@ namespace Crafting
         {
             if (!_recipeData.CanCraft(_inventory))
             {
-                GameManager.Instance.TriggerNotification("Unable to craft");
+                GameManager.Instance.TriggerNotification("Insufficient resources");
                 return;
             }
 
@@ -50,7 +50,7 @@ namespace Crafting
             }
 
             GameManager.Instance.UpgradeShipTier();
-            GameManager.Instance.TriggerNotification("Upgraded ship");
+            GameManager.Instance.TriggerNotification($"Ship upgraded to tier {GameManager.Instance.ShipTier}");
         }
 
         private void OnShipTierUp(int newTier)

@@ -10,7 +10,6 @@ namespace ScriptableObjects
     {
         public ItemQuantity[] ingredients;
         public ItemQuantity[] products;
-        public string customCraftNotificationMessage;
 
         public bool CanCraft(Inventory inventory)
         {

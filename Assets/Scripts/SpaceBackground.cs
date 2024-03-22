@@ -21,12 +21,18 @@ public class SpaceBackground : MonoBehaviour
 
     private void Update()
     {
+        foreach (var layer in layers)
+        {
+            layer.UpdateOffset(currentCamera.transform.position);
+        }
+
+        if (!ringPositionCalculator) return;
+        
         var currentRingData = ringPositionCalculator.CurrentRing;
         foreach (var layer in layers)
         {
             layer.UpdateBgTint(currentRingData.backgroundTint, bgTintTransitionSpeed * Time.deltaTime);
             layer.UpdateStarTint(currentRingData.starTint, starTintTransitionSpeed * Time.deltaTime);
-            layer.UpdateOffset(currentCamera.transform.position);
         }
     }
     

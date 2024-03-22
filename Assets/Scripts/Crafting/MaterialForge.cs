@@ -19,7 +19,7 @@ namespace Crafting
         {
             if (!_recipeData.CanCraft(_inventory))
             {
-                GameManager.Instance.TriggerNotification("Unable to craft");
+                GameManager.Instance.TriggerNotification("Insufficient resources");
                 return;
             }
 

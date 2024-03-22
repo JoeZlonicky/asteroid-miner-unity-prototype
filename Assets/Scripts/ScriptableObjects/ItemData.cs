@@ -8,6 +8,5 @@ namespace ScriptableObjects
         public string displayName;
         public Texture2D icon;
         public GameObject pickupPrefab;
-        public bool hideInInventory;
     }
 }

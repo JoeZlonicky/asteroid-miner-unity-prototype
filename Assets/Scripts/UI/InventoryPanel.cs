@@ -47,16 +47,12 @@ namespace UI
 
         private void OnItemAddedToInventory(ItemData itemData, int n, bool isNew)
         {
-            if (itemData.hideInInventory) return;
-            
             var slot = isNew ? StartNewSlot(itemData) : _correspondingSlots[itemData];
             slot.SetItemCount(itemData, _connectedInventory.GetItemCount(itemData));
         }
 
         private void OnItemRemovedFromInventory(ItemData itemData, int n, bool isLastOf)
         {
-            if (itemData.hideInInventory) return;
-            
             var slot = _correspondingSlots[itemData];
             if (isLastOf)
             {
