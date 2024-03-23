@@ -13,26 +13,45 @@ namespace Components
         [field: SerializeField] public int MaxHealth { get; private set; } = 10;
         [field: SerializeField] public bool Undying { get; set; }
         private int CurrentHealth { get; set; }
+        private bool IsDead { get; set; }
 
         private void Awake()
         {
             CurrentHealth = MaxHealth;
         }
 
-        public int DealDamage(int amount)
+        public void DealDamage(int amount)
         {
-            if (amount == 0) return 0;
+            if (amount == 0 || IsDead) return;
             Debug.Assert(amount > 0);
 
             var before = CurrentHealth;
             CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
+            
+            OnHit?.Invoke(before - CurrentHealth);
+            if (CurrentHealth != 0 || Undying) return;
+            
+            OnDeath?.Invoke();
+            IsDead = true;
+        }
 
-            var change = before - CurrentHealth;
+        public void Heal(int amount)
+        {
+            if (amount == 0 || IsDead) return;
+            Debug.Assert(amount > 0);
 
-            OnHit?.Invoke(change);
-            if (CurrentHealth == 0 && !Undying) OnDeath?.Invoke();
-        
-            return change;
+            CurrentHealth = Mathf.Min(MaxHealth, CurrentHealth + amount);
+        }
+
+        public void RaiseMaxHealth(int amount)
+        {
+            Debug.Assert(amount > 0);
+            MaxHealth += amount;
+        }
+
+        public bool IsFullHealth()
+        {
+            return CurrentHealth == MaxHealth;
         }
     }
 }

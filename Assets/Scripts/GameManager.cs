@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     
     public Inventory PlayerInventory { get; private set; }
+    public Health PlayerHealth { get; private set; }
     public int ShipTier { get; private set; }
     public bool IsWarpGateRepaired { get; private set; }
 
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         
         PlayerInventory = GetComponent<Inventory>();
+        PlayerHealth = GetComponent<Health>();
     }
 
     public void TriggerNotification(string text)

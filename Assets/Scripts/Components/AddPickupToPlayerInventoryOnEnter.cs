@@ -1,4 +1,5 @@
 using UnityEngine;
+using World;
 
 namespace Components
 {
