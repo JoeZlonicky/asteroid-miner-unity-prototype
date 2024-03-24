@@ -16,6 +16,7 @@ namespace World
         {
             foreach (var layer in layers)
             {
+                // So changing the material doesn't change the asset
                 layer.starImage.material = Instantiate(layer.starImage.material);
             }
         }
@@ -66,6 +67,8 @@ namespace World
             {
                 var currentColor = starImage.material.GetColor(colorParameterID);
                 var goalColor = new Color(color.r, color.g, color.b, currentColor.a);
+                if (Vector4.SqrMagnitude(goalColor - currentColor) < 0.00001) return;
+                
                 var newColor = Vector4.MoveTowards(currentColor, goalColor, maxDelta);
             
                 starImage.material.SetColor(colorParameterID, newColor);

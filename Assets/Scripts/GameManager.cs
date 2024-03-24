@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public Health PlayerHealth { get; private set; }
     public int ShipTier { get; private set; }
     public bool IsWarpGateRepaired { get; private set; }
+    public float WorldTime { get; private set; }
 
     private void Awake()
     {
@@ -34,6 +35,11 @@ public class GameManager : MonoBehaviour
         
         PlayerInventory = GetComponent<Inventory>();
         PlayerHealth = GetComponent<Health>();
+    }
+
+    private void Update()
+    {
+        WorldTime += Time.deltaTime;
     }
 
     public void TriggerNotification(string text)

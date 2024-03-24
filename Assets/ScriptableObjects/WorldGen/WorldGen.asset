@@ -16,6 +16,7 @@ MonoBehaviour:
   - spawns: []
     backgroundTint: {r: 0.0627451, g: 0.078431375, b: 0.12156863, a: 0}
     starTint: {r: 0.6431373, g: 0.8666667, b: 0.85882354, a: 0}
+    stormSeverity: 0
     radialWidth: 20
     nChunks: 2
     circumferentialDensity: 0
@@ -26,6 +27,7 @@ MonoBehaviour:
     - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     backgroundTint: {r: 0.0627451, g: 0.078431375, b: 0.12156863, a: 0}
     starTint: {r: 0.6431373, g: 0.8666667, b: 0.85882354, a: 0}
+    stormSeverity: 0
     radialWidth: 50
     nChunks: 8
     circumferentialDensity: 0.075
@@ -38,6 +40,7 @@ MonoBehaviour:
     - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     backgroundTint: {r: 0.12156863, g: 0.0627451, b: 0.068605684, a: 0}
     starTint: {r: 1, g: 0.1273585, b: 0.18553454, a: 0}
+    stormSeverity: 1
     radialWidth: 50
     nChunks: 16
     circumferentialDensity: 0.075
@@ -47,6 +50,7 @@ MonoBehaviour:
   - spawns: []
     backgroundTint: {r: 0.12156863, g: 0.0627451, b: 0.06666667, a: 0}
     starTint: {r: 1, g: 0.1254902, b: 0.18431373, a: 0}
+    stormSeverity: 2
     radialWidth: 5
     nChunks: 32
     circumferentialDensity: 0.03
@@ -61,6 +65,7 @@ MonoBehaviour:
     - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     backgroundTint: {r: 0.049661785, g: 0.08673011, b: 0.11320752, a: 0}
     starTint: {r: 0.20990565, g: 0.54238355, b: 0.8396226, a: 0}
+    stormSeverity: 2
     radialWidth: 50
     nChunks: 32
     circumferentialDensity: 0.075
@@ -70,6 +75,7 @@ MonoBehaviour:
   - spawns: []
     backgroundTint: {r: 0.050980393, g: 0.08627451, b: 0.11372549, a: 0}
     starTint: {r: 0.21176471, g: 0.5411765, b: 0.8392157, a: 0}
+    stormSeverity: 3
     radialWidth: 10
     nChunks: 32
     circumferentialDensity: 0.03
@@ -85,6 +91,7 @@ MonoBehaviour:
     - {fileID: 4433096099888873084, guid: 15896ba1c5e9634408b18f7b876fff4e, type: 3}
     backgroundTint: {r: 0.102742985, g: 0.0627451, b: 0.12156863, a: 0}
     starTint: {r: 0.84431815, g: 0.35154858, b: 0.9433962, a: 0}
+    stormSeverity: 3
     radialWidth: 30
     nChunks: 32
     circumferentialDensity: 0.09
@@ -94,6 +101,7 @@ MonoBehaviour:
   - spawns: []
     backgroundTint: {r: 0.101960786, g: 0.0627451, b: 0.12156863, a: 0}
     starTint: {r: 0.84313726, g: 0.3529412, b: 0.94509804, a: 0}
+    stormSeverity: 5
     radialWidth: 20
     nChunks: 32
     circumferentialDensity: 0.05
@@ -106,6 +114,7 @@ MonoBehaviour:
     - {fileID: 4249138829116535924, guid: 22a9ea0dac6346944b58d35e567dfc7a, type: 3}
     backgroundTint: {r: 0.065681726, g: 0.11320752, b: 0.065681726, a: 0}
     starTint: {r: 0.5023352, g: 0.9811321, b: 0.48593804, a: 0}
+    stormSeverity: 5
     radialWidth: 70
     nChunks: 32
     circumferentialDensity: 0.03
