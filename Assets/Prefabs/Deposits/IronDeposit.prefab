@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9081227465752100590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636260515788711053, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921457946792532156, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
+    - target: {fileID: 5120082192711451371, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
+    - target: {fileID: 6350670432512537924, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: caa9017951b9c724ba454c2944504e42, type: 2}
+    - target: {fileID: 6899862731063106242, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: gemSpawnChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381107163224374699, guid: d991cf8a16cc42644b597896c53238d3, type: 3}
+      propertyPath: m_Name
+      value: IronDeposit
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d991cf8a16cc42644b597896c53238d3, type: 3}

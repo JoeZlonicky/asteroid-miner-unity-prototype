@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8543206273787980068, guid: bf05f30cf1a56614cac48200c5943e0d, type: 3}
       propertyPath: m_Name
-      value: Ore
+      value: IronOre
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

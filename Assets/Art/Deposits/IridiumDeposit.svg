@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="179.9949"
+   height="136.91878"
+   viewBox="0 0 44.998727 34.229697"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="IridiumDeposit.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:export-filename="IridiumDeposit.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#0d0d0d"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="4.1373684"
+     inkscape:cx="64.412925"
+     inkscape:cy="82.782089"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     labelstyle="default" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.76044626,0,0,0.76044626,-60.841885,-41.074338)">
+    <path
+       style="fill:#25562e;fill-opacity:1;stroke:#a8ca58;stroke-width:3.94505;stroke-linecap:square;stroke-dasharray:none"
+       d="m 82.115551,77.792503 3.503173,-8.56239 1.73354,-10.648849 6.556813,0.142665 6.244053,6.200775 4.21667,0.02366 5.00509,-6.783603 4.14495,3.500546 3.88113,4.974912 8.724,-3.015887 1.56606,3.790098 -9e-4,8.114635 7.51381,0.284308 1.95813,4.189801 -9.64779,12.173079 -12.06088,-2.102828 -11.54283,-7.822872 -11.234693,6.650908 z"
+       id="path7"
+       sodipodi:nodetypes="ccccccccccccccccccc" />
+    <path
+       style="fill:#25562e;fill-opacity:1;stroke:#a8ca58;stroke-width:3.94505;stroke-linecap:square;stroke-dasharray:none"
+       d="m 94.765363,81.019212 -2.158234,-8.012783 5.000731,-2.063644 4.60938,5.212039"
+       id="path9"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#25562e;fill-opacity:1;stroke:#a8ca58;stroke-width:3.94505;stroke-linecap:square;stroke-dasharray:none"
+       d="m 112.18934,78.884375 3.97299,-7.310299 5.56218,2.145414 -0.79459,10.091391"
+       id="path10" />
+  </g>
+</svg>
